@@ -1,0 +1,61 @@
+{
+	"infra_config": {
+
+		"devices": {
+			"Fog": {
+				"Fog-1": {
+					"device_type" : "TX1"
+				},
+				"Fog-2": {
+					"device_type" : "SI"
+				}
+			},
+			"Edge" : {
+				"Edge-1.1": {
+					"device_type" : "Pi2B"
+				},
+				"Edge-1.2": {
+					"device_type" : "Pi2B"
+				},
+				"Edge-2.1": {
+					"device_type" : "Pi3B"
+				},
+				"Edge-2.2": {
+					"device_type" : "Pi3B"
+				}
+			}
+		},
+
+		"private_networks": {
+			"Fog-1-private": {
+				"gw": "Fog-1",
+				"latency": "200",
+				"bw": "25",
+				"conn_dev": [
+					"Edge-1.1",
+					"Edge-1.2"
+				]
+			},
+			"Fog-2-private": {
+				"gw": "Fog-2",
+				"latency": "20",
+				"bw": "10",
+				"conn_dev": [
+					"Edge-2.1",
+					"Edge-2.2"
+				]
+			}
+		},
+
+		"public_networks": {
+			"global": {
+				"latency": "50",
+				"bw": "125",
+				"conn_dev": [
+					"Fog-1",
+					"Fog-2"
+				]
+			}
+		}
+	}
+}

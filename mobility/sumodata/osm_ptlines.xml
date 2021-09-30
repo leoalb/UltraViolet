@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu Mar  4 13:20:40 2021 by Eclipse SUMO netconvert Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="/usr/share/sumo/data/typemap/osmNetconvert.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+        <lefthand value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+        <railway.topology.repair.stop-turn value="true"/>
+    </railway>
+
+    <report>
+        <verbose value="true"/>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="10104371" name="293E: KR Market =&gt; Muthugadahalli" line="293E" type="bus" vClass="bus" completeness="0.12">
+        <route edges="760543010 760543009#0 760543009#1 760543009#2 172891297#0 172891297#1 172891297#2 172891297#3 172891297#4 172891297#5 244304928#0 244304928#1 244304928#2 244304928#3 310910082 763284659 37898955#0 37898955#1 37898955#2 461556532 148016888 22893740#0 22893740#1 154340361#0 154340361#1 154340361#2 154340361#3 154340361#4 154340361#5 154340361#6 36882313#0 36882313#1 36882313#2 26283603#0 26283603#1 26283603#2 26283603#3 26283603#4 26283603#5 26283603#6 26283603#7 26283603#8 26283603#9 26283603#10 107215083#0 107215083#1 107215083#2 107215083#4 359476589 359476587"/>
+        <busStop id="7104861407" name="KR Market"/>
+        <busStop id="1739362330" name="Town Hall"/>
+        <busStop id="452414811" name="Corporation Circle (Cubbon Park)"/>
+        <busStop id="3741208081" name="Kasturba Road"/>
+        <busStop id="7106320857" name="MG Statue"/>
+        <busStop id="4144220197" name="Chinnaswamy Stadium"/>
+    </ptLine>
+    <ptLine id="10533449" name="286A: KR Market =&gt; Jakkur Layout Ayyappa Temple" line="286A" type="bus" vClass="bus" completeness="0.26">
+        <route edges="760543010 760543009#0 760543009#1 760543009#2 172891297#0 172891297#1 172891297#2 172891297#3 172891297#4 172891297#5 244304928#0 244304928#1 244304928#2 244304928#3 310910082 763284659 37898955#0 37898955#1 37898955#2 461556532 23076927#0 23076927#1 23076927#2 23076927#3 23076927#4 23076927#5 764332432#2 36907507#0 36907507#1 36907507#2 36907507#3 36907507#4 36907507#5 36907507#6 150808480 150808482#0 150808482#1 150808482#2 150808482#3 28631881#0 28631881#1 402911910 139266401 498554152#0 498554152#1 498554152#2 498554151 580772044 368624554#0 368624554#1 691949961#0 691949961#1 372031016#0 372031016#1 498550660 368624555 498550659 139141579#0 139141579#1 580771983 31235670 760543008 36884553"/>
+        <busStop id="7104861407" name="KR Market"/>
+        <busStop id="1739362330" name="Town Hall"/>
+        <busStop id="2394042060" name="Corporation"/>
+        <busStop id="249087970" name="Mysore Bank"/>
+        <busStop id="3755675146" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="10587666" name="140: Vivek Nagara =&gt; KR Market" line="140" type="bus" vClass="bus" completeness="1.00">
+        <route edges="-763175334#5 -763175334#4 -763175334#3 -763175334#2 -763175334#1 -763175334#0 -763175333#5 -763175333#4 -763175333#3 -763175333#2 -763175333#1 -763175333#0 27946101#0 27946101#1 27946101#2 -401993927#2 -401993927#1 -401993927#0 -763293419#1 -763293419#0 -401908497#2 -401908497#1 -401908497#0 401993919#0 401993919#1 401993919#2 763175330#0 763175330#1 763175330#2 763175330#3 763175330#4 763175330#5 171887405#1 171887405#2 171887405#5 171887405#6 171887405#8 171887405#12 171887405#13 171887405#14 171887405#15 171887405#16 23029251#0 23029251#1 91890599#0 91890599#1 91890599#3 91890599#4 91890599#5 -23018325#14 -23018325#13 -23018325#12 -23018325#11 -23018325#10 -23018325#9 -23018325#8 -23018325#6 -23018325#5 -23018325#4 -23018325#3 -23018325#2 -23018325#1 -23018325#0 736430942 132191814#0 132191814#1 132191814#2 132191814#3 132191814#4 132191814#5 763175325#0 763175325#1 763175325#2 763175325#3 182196323#0 182196323#1 182196323#2 763175324 143368260#0 143368260#1 688824223#0 688824223#1 688824223#2 688824223#3 23081608#0 23081608#1 23081608#2 763175322"/>
+        <busStop id="-2406115675" name="Vivekanagara"/>
+        <busStop id="-6017833822" name="Vannarapete"/>
+        <busStop id="6017833823" name="ASC Center"/>
+        <busStop id="-2406087672" name="Austin Town"/>
+        <busStop id="2406088640" name="Philomenas Hospital"/>
+        <busStop id="-1617752128" name="Nanjappa Circle"/>
+        <busStop id="-2406089988" name="Akkithimmanahalli"/>
+        <busStop id="2406093010" name="Poornima Talkies"/>
+        <busStop id="1568922532" name="Town Hall"/>
+        <busStop id="7131511277" name="KR Market"/>
+    </ptLine>
+    <ptLine id="10591795" name="333: Kempegowda Bus Station =&gt; Marathahalli Bridge" line="333" type="bus" vClass="bus" completeness="0.50">
+        <route edges="580772044 368624554#0 368624554#1 691949961#0 691949961#1 372031016#0 372031016#1 498550660 368624555 498550659 139141579#0 139141579#1 580771983 31235670 760543008 36884551#0 36884551#1 251495490 150785556#0 150785556#1 150785556#2 150785556#3 150785556#4 779282846 779282844 764332430 150894905 52032727 638928392#0 638928392#1 638928392#2 638928392#3 638928392#4 638928392#5 638928392#6 638928392#7 638928392#8 781001561 22893740#0 22893740#1 154340361#0 154340361#1 154340361#2 154340361#3 154340361#4 154340361#5 154340361#6 760700376 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 180375724#0 180375724#1 36853150 766406229#0 766406229#1 766406229#2 766406229#3 766406229#4 766406229#5 766406228#0 766406228#1 461556535#0 461556535#1 461556535#2 461556535#3 461556535#4 461556535#5 461556535#6 461556535#7 763290547#0 763290547#1 763290547#2 763290547#3 763290547#4 763290547#5 763290547#6 763290547#7 763290547#8 124316745#0 124316745#1 124316745#3 124316745#4 124316745#5 124316745#6 124316745#7 124316745#8 327639080 635340513 325833350#0 325833350#1 325833350#2 325833350#4 27007398#0 27007398#1 27007398#3 27007398#4 28137491#1 28137491#2 635340514 124316968#0 124316968#1 124316968#2 638531683 638531682#0 638531682#2 638531682#3"/>
+        <busStop id="3755675146@10591795" name="Kempegowda Bus Station"/>
+        <busStop id="5335240458" name="Maharani College, KR Circle"/>
+        <busStop id="3943325827" name="KR Circle"/>
+        <busStop id="663317710" name="St Marthas Hospital"/>
+        <busStop id="452414811" name="Corporation Circle (Cubbon Park)"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="3356616804" name="Richmond Circle"/>
+        <busStop id="1383996009" name="St. Joseph&apos;s College"/>
+        <busStop id="3344494904" name="Mayo Hall"/>
+        <busStop id="296030070" name="Hosmat Hospital"/>
+        <busStop id="7133498157" name="Military Accounts Office"/>
+        <busStop id="2401263650" name="Command Hospital"/>
+    </ptLine>
+    <ptLine id="10601097" name="111: KR Market =&gt; Kaval Byrasandra" line="111" type="bus" vClass="bus" completeness="0.25">
+        <route edges="149104364 172891297#0 172891297#1 172891297#2 172891297#3 172891297#4 172891297#5 244304928#0 244304928#1 244304928#2 244304928#3 310910082 763284659 37898955#0 37898955#1 37898955#2 461556532 23076927#0 23076927#1 23076927#2 23076927#3 23076927#4 23076927#5 764332432#2 38684971#0 38684971#1 363477538 160558221#1 160558221#2"/>
+        <busStop id="7131511277@10601097" name="KR Market"/>
+        <busStop id="1739362330" name="Town Hall"/>
+        <busStop id="2394042060" name="Corporation"/>
+        <busStop id="249087970" name="Mysore Bank"/>
+        <busStop id="2394043250" name="Cauvery Bhavana"/>
+        <busStop id="7140563294" name="Maharanis College"/>
+    </ptLine>
+    <ptLine id="10601120" name="146E: Kempegowda Bus Station =&gt; Ejipura" line="146E" type="bus" vClass="bus" completeness="0.95">
+        <route edges="580772044 368624554#0 368624554#1 691949961#0 691949961#1 372031016#0 372031016#1 498550660 368624555 498550659 139141579#0 139141579#1 580771983 31235670 760543008 36884551#0 36884551#1 251495490 150785556#0 150785556#1 150785556#2 150785556#3 150785556#4 779282846 779282844 764332430 150894905 52032727 638928392#0 638928392#1 638928392#2 638928392#3 638928392#4 638928392#5 638928392#6 638928392#7 638928392#8 781001561 22893740#0 22893740#1 26179365 148016866#0 148016866#1 36897704#0 36897704#1 36897704#2 36897705#0 36897705#1 36897705#2 328836686 764329022#0 764329022#1 764329022#2 328836685#0 328836685#2 328836685#3 328836685#4 328836685#5 328836685#6 328836685#7 328836685#8 328836685#9 763282652 23018325#0 23018325#1 23018325#2 23018325#3 23018325#4 23018325#5 23018325#6 23018325#8 23018325#9 23018325#10 23018325#11 23018325#12 23018325#13 23018325#14 763175327#0 763175327#2 164042287#0 164042287#2 164042287#4 164042287#5 164042287#7 164042287#8 164042287#9 764329020#0 764329020#1 239572012#1 57885669#0 57885669#1 57885669#2 57885669#3 57885669#4 401908497#0 401908497#1 401908497#2 763293419#0 763293419#1 763293419#2 401993927#1 401993927#2 401908499#0 401908499#1 763175333#0 763175333#1 763175333#2 763175333#3 763175333#4 763175333#5 38772795#0 38772795#1 38772795#2 38772795#4 38772795#5 38772795#6 38772795#7 38772795#9 38772795#10 38772795#11 462585138#1 52736010#0 52736010#1 52736010#2 52736010#3 52736010#4 52736010#6 52736010#7 52736010#8 52736010#9 52736010#10 52736010#11 52736010#12 52736010#13 52736010#14 52736010#15 52736010#16 52736010#17"/>
+        <busStop id="3755675146@10591795" name="Kempegowda Bus Station"/>
+        <busStop id="5335240458" name="Maharani College, KR Circle"/>
+        <busStop id="3943325827" name="KR Circle"/>
+        <busStop id="663317710" name="St Marthas Hospital"/>
+        <busStop id="2393695722" name="Corporation Circle"/>
+        <busStop id="3356616803" name="Corporation, Mission Road (Towards Subbiah Circle)"/>
+        <busStop id="1650296781" name="Subbaiah Circle"/>
+        <busStop id="7140560442" name="Akkithimmanahalli"/>
+        <busStop id="7140560440" name="Nanjappa Circle"/>
+        <busStop id="7140560438" name="Elgin Floor Mill"/>
+        <busStop id="1617749837" name="Johnson Market"/>
+        <busStop id="4307590416" name="Philomenas Hospital"/>
+        <busStop id="7132495626" name="Austin Town"/>
+        <busStop id="2406087671" name="ASC Center"/>
+        <busStop id="2406115674" name="Vannarapete"/>
+        <busStop id="-2406115675" name="Vivekanagara"/>
+        <busStop id="7140560435" name="Shine Bakery"/>
+        <busStop id="7140560433" name="Fairland Shop"/>
+    </ptLine>
+    <ptLine id="10601158" name="293C: KR Market =&gt; K Narayanapura Main Bus Stand" line="293C" type="bus" vClass="bus" completeness="0.19">
+        <route edges="149104364 172891297#0 172891297#1 172891297#2 172891297#3 172891297#4 172891297#5 244304928#0 244304928#1 244304928#2 244304928#3 310910082 763284659 37898955#0 37898955#1 37898955#2 461556532 23076927#0 23076927#1 23076927#2 23076927#3 23076927#4 23076927#5 -133867982#3 -133867982#2 -133867982#1 -133867982#0 391160931 358318632 391160980 764332430 362206701#0 362206701#1 362206701#2 362206701#3 362206701#4 362206701#5 362206701#6 362206701#7 362206701#8"/>
+        <busStop id="7131511277@10601097" name="KR Market"/>
+        <busStop id="1739362330" name="Town Hall"/>
+        <busStop id="2394042060" name="Corporation"/>
+        <busStop id="249087970" name="Mysore Bank"/>
+        <busStop id="-7140581379" name="KR Circle"/>
+        <busStop id="663551440" name="Vidhana Soudha"/>
+    </ptLine>
+    <ptLine id="10601161" name="292: KR Market =&gt; Nagaraesh Nagenahalli" line="292" type="bus" vClass="bus" completeness="0.18">
+        <route edges="760543010 760543009#0 760543009#1 760543009#2 172891297#0 172891297#1 172891297#2 172891297#3 172891297#4 172891297#5 244304928#0 244304928#1 244304928#2 244304928#3 310910082 763284659 37898955#0 37898955#1 37898955#2 461556532 148016888 22893740#0 22893740#1 154340361#0 154340361#1 154340361#2 154340361#3 154340361#4 154340361#5 154340361#6 36882313#0 36882313#1 36882313#2 26283603#0 26283603#1 26283603#2 26283603#3 26283603#4 26283603#5 26283603#6 26283603#7 26283603#8 26283603#9 26283603#10 107215083#0 107215083#1 107215083#2 107215083#4 359476589 359476587"/>
+        <busStop id="7104861407" name="KR Market"/>
+        <busStop id="1739362330" name="Town Hall"/>
+        <busStop id="452414811" name="Corporation Circle (Cubbon Park)"/>
+        <busStop id="3741208081" name="Kasturba Road"/>
+        <busStop id="7106320857" name="MG Statue"/>
+        <busStop id="4144220197" name="Chinnaswamy Stadium"/>
+    </ptLine>
+    <ptLine id="10601162" name="292B: Kempegowda Bus Station =&gt; Nagaraesh Nagenahalli" line="292B" type="bus" vClass="bus" completeness="0.10">
+        <route edges="580772044 368624554#0 368624554#1 691949961#0 691949961#1 372031016#0 372031016#1 498550660 368624555 498550659 139141579#0 139141579#1 580771983 31235670 760543008 36884551#0 36884551#1 251495490 150785556#0 150785556#1 150785556#2 150785556#3 150785556#4 779282846 779282844 764332430 362206701#0 362206701#1 362206701#2 362206701#3 362206701#4 362206701#5 362206701#6 362206701#7 362206701#8"/>
+        <busStop id="3755675146@10591795" name="Kempegowda Bus Station"/>
+        <busStop id="5335240458" name="Maharani College, KR Circle"/>
+        <busStop id="663551440" name="Vidhana Soudha"/>
+    </ptLine>
+    <ptLine id="10602027" name="G4: Brigade Road =&gt; Bannerughatta National Park" line="G4" type="bus" vClass="bus" completeness="0.16">
+        <route edges="23029716 23029284#0 23029284#1 23029284#3 23029284#4 23029284#5 239572011#0 239572011#1 239441161#0 239441161#1 239441161#2 239441161#3 -28842920#4 -28842920#3 -28842920#2 -28842920#0 -794756247#3 -794756247#2 -794756247#1 -794756247#0 553975952#0 553975952#1 553975952#2 553975952#3 553975952#4 553975952#5"/>
+        <busStop id="1067841650" name="Brigade Road"/>
+        <busStop id="3406880176" name="Vellara Junction"/>
+        <busStop id="7141213462" name="Johnson Market"/>
+        <busStop id="7141213460" name="Elgin Flour Mill"/>
+        <busStop id="-7141213458" name="Indian Christian Cemetry"/>
+    </ptLine>
+    <ptLine id="10602138" name="294B: Kempegowda Bus Station =&gt; Jayanthinagara" line="294B" type="bus" vClass="bus" completeness="0.12">
+        <route edges="580772044 368624554#0 368624554#1 691949961#0 691949961#1 372031016#0 372031016#1 498550660 368624555 498550659 139141579#0 139141579#1 580771983 31235670 760543008 36884551#0 36884551#1 251495490 150785556#0 150785556#1 150785556#2 150785556#3 150785556#4 779282846 779282844 764332430 362206701#0 362206701#1 362206701#2 362206701#3 362206701#4 362206701#5 362206701#6 362206701#7 362206701#8"/>
+        <busStop id="3755675146@10591795" name="Kempegowda Bus Station"/>
+        <busStop id="5335240458" name="Maharani College, KR Circle"/>
+        <busStop id="663551440" name="Vidhana Soudha"/>
+    </ptLine>
+    <ptLine id="10603778" name="290D: Ambedkar Medical College Shampura =&gt; Kempegowda Bus Station" line="290D" type="bus" vClass="bus" completeness="0.24">
+        <route edges="362206700#0 362206700#1 362206700#2 362206700#3 362206700#4 553253465 553253466#0 553253466#1 764332429 358318632 764332431 147698259 46704070 234946738#0 234946738#1 234946738#2 234946738#3 36907507#0 36907507#1 36907507#2 36907507#3 36907507#4 36907507#5 36907507#6 150808480 150808482#0 150808482#1 150808482#2 150808482#3 28631881#0 28631881#1 402911910 139266401 498554152#0 498554152#1 498554152#2"/>
+        <busStop id="663551443" name="Vidhana Soudha"/>
+        <busStop id="7142097525" name="Maharani College, KR Circle"/>
+        <busStop id="7142097523" name="Cauvery Bhavana"/>
+        <busStop id="3755675146@10603778" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="10603793" name="290B: Kempegowda Bus Station =&gt; Thanisandra" line="290B" type="bus" vClass="bus" completeness="0.11">
+        <route edges="580772044 368624554#0 368624554#1 691949961#0 691949961#1 372031016#0 372031016#1 498550660 368624555 498550659 139141579#0 139141579#1 580771983 31235670 760543008 36884551#0 36884551#1 251495490 150785556#0 150785556#1 150785556#2 150785556#3 150785556#4 779282846 779282844 764332430 362206701#0 362206701#1 362206701#2 362206701#3 362206701#4 362206701#5 362206701#6 362206701#7 362206701#8"/>
+        <busStop id="3755675146@10591795" name="Kempegowda Bus Station"/>
+        <busStop id="5335240458" name="Maharani College, KR Circle"/>
+        <busStop id="663551440" name="Vidhana Soudha"/>
+    </ptLine>
+    <ptLine id="10625116" name="190: Jeevanbheema Nagara =&gt; Srinagara Bus Station" line="190" type="bus" vClass="bus" completeness="0.61">
+        <route edges="464465186#0 464465186#2 464465186#3 464465186#4 464465186#5 464465186#6 464465186#7 464465186#8 464465186#9 464465186#10 464465186#11 464465186#12 464465186#13 464465186#14 464465205#0 464465205#1 464465205#2 464465205#3 464465205#4 464465205#5 464465205#6 464465205#8 464465205#9 464465205#10 464465205#11 638541498#1 327550407#1 327550407#2 327550407#3 327550407#4 327550407#5 23443806#0 23443806#1 23443806#2 23443806#4 766406977 133632534#0 133632534#1 133632534#2 133632534#3 133632534#6 763175330#0 763175330#1 763175330#2 763175330#3 763175330#4 763175330#5 171887405#1 171887405#2 171887405#5 171887405#6 171887405#8 171887405#12 171887405#13 171887405#14 171887405#15 171887405#16 763175328 36851615 36852353 747182858 132191816 36853146#0 36853146#1 36853146#2 36853146#3 638928394 763284654 688824220#0 688824220#1 36853145#0 36853145#1 36853145#2 23078145#0 99452388#0 99452388#1 99452388#2 99452388#3 99452388#4 99452388#5 99452388#6 99452388#7 99452388#8 99452388#9 99452388#10 99452388#11 99452388#12 99452388#13 99452388#14 99452388#15 99452388#16 99452388#17"/>
+        <busStop id="2401658294" name="Lakshmipura Ulsoor"/>
+        <busStop id="2401658592" name="Halasuru"/>
+        <busStop id="4595656669" name="Halasur Police Station"/>
+        <busStop id="2949043344" name="Lido Talkies"/>
+        <busStop id="3476877517" name="Hosmat Hospital"/>
+        <busStop id="2396896553" name="Lifestyle"/>
+        <busStop id="428836836" name="Richmond Circle"/>
+        <busStop id="4843099635" name="KH Road"/>
+        <busStop id="2396447784" name="Shanthinagara Bus Stop KH Road"/>
+        <busStop id="2396890413" name="Lalbagh Main Gate"/>
+        <busStop id="683352664" name="Krumbigal Road"/>
+    </ptLine>
+    <ptLine id="10641899" name="55B: KR Market =&gt; Kempapura Agarahara" line="55B" type="bus" vClass="bus" completeness="0.33">
+        <route edges="190144809#0 190144809#2 190144809#4 454013128 358326660 358326662 -36885143#10 -36885143#9 -36885143#8 -36885143#7 -36885143#6 -36885143#5 -36885143#4 -36885143#3 -36885143#2 -36885143#1 -36885143#0 -525778225#1 -525778225#0 -162581479 -36958313#1 -36958313#0"/>
+        <busStop id="2007574677" name="KR Market"/>
+        <busStop id="-2402196851" name="Vinayaka Talkies KR Market"/>
+    </ptLine>
+    <ptLine id="10816381" name="406: Kempegowda Bus Station =&gt; Nelamangala Hunasemara" line="406" type="bus" vClass="bus" completeness="0.50">
+        <busStop id="3755675146" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="11300237" name="Mysuru - Chennai Shatabdi Express" line="Mysuru - Chennai Shatabdi Express" type="train" vClass="rail" completeness="0.25">
+        <route edges="138078005#0 138078005#1 138078005#2 645645104 53861699#0 53861699#1 825978827 825978824"/>
+        <busStop id="806588782" name="Bangalore City Junction"/>
+    </ptLine>
+    <ptLine id="11300238" name="Chennai - Mysuru Shatabdi Express" line="Chennai - Mysuru Shatabdi Express" type="train" vClass="rail" completeness="0.25">
+        <route edges="431219876#0 431219876#1 431219876#2 431219876#3 431219876#4 825978822 431219877#1 431219877#2"/>
+        <busStop id="806588782" name="Bangalore City Junction"/>
+    </ptLine>
+    <ptLine id="11302095" name="Rajdhani Express: Delhi =&gt; Bengaluru" line="Rajdhani Express: Delhi =&gt; Bengaluru" type="train" vClass="rail" completeness="0.14">
+        <route edges="53861698#0 53861698#1 53861698#2"/>
+        <busStop id="806588789" name="Bangalore City Junction"/>
+    </ptLine>
+    <ptLine id="11302587" name="Rajdhani Express: Bengaluru =&gt; Delhi" line="Rajdhani Express: Bengaluru =&gt; Delhi" type="train" vClass="rail" completeness="0.20">
+        <route edges="372083762#0 372083762#1"/>
+        <busStop id="806588796" name="Bangalore City Junction"/>
+    </ptLine>
+    <ptLine id="1798771" name="Namma Metro Purple Line (Baiyyappanahalli --&gt; Mysore Road)" line="Purple" type="subway" vClass="rail_urban" completeness="0.53">
+        <route edges="549187829 549187830 549187831 549187832 508711042 549187834#1 44829220 549187836 549277222#0 549277222#1 133867981 549187839"/>
+        <busStop id="850782880" name="Indiranagar"/>
+        <busStop id="431524247" name="Halasuru"/>
+        <busStop id="428847118" name="Trinity"/>
+        <busStop id="850782876" name="Mahatma Gandhi Road"/>
+        <busStop id="4676553346" name="Cubbon Park"/>
+        <busStop id="568344479" name="Dr. B R Ambedkar Station, Vidhana Soudha"/>
+        <busStop id="1087823607" name="Sir M Vishweshwariah - Central College"/>
+        <busStop id="5305932617" name="Nadaprabhu Kempegowda Station, Majestic (Purple Line)"/>
+        <busStop id="1560067666" name="Krantivira Sangolli Rayanna Railway Station"/>
+    </ptLine>
+    <ptLine id="1798772" name="Namma Metro Green Line (Northbound)" line="Green" type="subway" vClass="rail_urban" completeness="0.17">
+        <busStop id="5760198472" name="Lalbagh"/>
+        <busStop id="-5760198474" name="National College"/>
+        <busStop id="-5760198473" name="Krishna Rajendra Market"/>
+        <busStop id="-5760198469" name="Chikkapete"/>
+        <busStop id="5760198468" name="Nadaprabhu Kempegowda Station, Majestic (Green Line)"/>
+    </ptLine>
+    <ptLine id="1798858" name="276: Majestic =&gt; Vidyaranyapura" line="276" type="bus" vClass="bus" completeness="0.17">
+        <route edges="372018370#0 372018370#1 139266401 31235676"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="2096817" name="340: KR Market (Kalasipalya) =&gt; Chikka Bellanduru" line="340" type="bus" vClass="bus" completeness="1.00">
+        <busStop id="1323690429" name="Makkala Koota"/>
+    </ptLine>
+    <ptLine id="5598563" name="90E: Kempegowda Bus Station =&gt; Railway Station Yeshwanthapura" line="90E" type="bus" vClass="bus" completeness="0.09">
+        <route edges="580772059 163560246 498550660 368624555 498550659 139141579#0 139141579#1 580771983 36957700#0 36957700#1 36957700#2 363454313"/>
+        <busStop id="2398074914@5598563" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="5598668" name="KBS3A" line="KBS3A" type="bus" vClass="bus" completeness="1.00">
+        <route edges="766406231 375964869 375964865 639010022#1 639010022#2 375964867#1 375964867#2 36897703#0 36897703#1 36965407 152462760 375964868#0 375964868#1 375964868#2 375964868#3 224618934#0 224618934#1 224618934#2 224618934#3 224618934#4 224618934#5 224618934#7 224618934#8 224618934#9 224618934#10 224618934#11 148016866#0 148016866#1 148016873#0 148016873#1 461556532 23076927#0 23076927#1 23076927#2 23076927#3 23076927#4 23076927#5 764332432#2 36907507#0 36907507#1 36907507#2 36907507#3 36907507#4 36907507#5 36907507#6 150808480 150808482#0 150808482#1 150808482#2 150808482#3 28631881#0 28631881#1 402911910"/>
+        <busStop id="2396890811" name="KH Road, Double Road"/>
+        <busStop id="597363270" name="Hudson Circle"/>
+        <busStop id="2393695722" name="Corporation Circle"/>
+        <busStop id="2394042060" name="Corporation"/>
+        <busStop id="249087970" name="Mysore Bank"/>
+    </ptLine>
+    <ptLine id="6693760" name="1" line="1" type="bus" vClass="bus" completeness="0.30">
+        <route edges="23133647#0 23133647#1 23133647#2 142487534 142487535#0 142487535#1 759364437#0 759364437#1 142487528 555368896#0 555368896#1 555368896#2 555368896#3 555368896#4 -555368897#4 -555368897#3 -555368897#2 -555368897#0 162697329#0 162697329#1 162697329#2 162697329#3 162697329#4 759364436 525778223#0 525778223#1 190144809#0 190144809#2 190144809#4 454013128 358326660 172891307 454013129#0 454013129#1 454013129#2 454013129#3 454013129#4 23076481 169817241#1 169817241#2 36897686 36897689#0 36897689#1 36897689#3 36897689#4 36897689#5 36897689#6 36897689#7 36897689#8 36897689#9 36897689#10 36897689#11 36897689#12 36897689#13 36897689#14 36897689#15 36897689#16 36897689#17 36897689#18 36897689#19 781001571 36958057#0 36958057#1 454013131#0 454013133#0 454013133#1 454013133#2 760493330 454483792#0 454483792#1 36884366 372018380 139141579#0 139141579#1 580771983 36957700#0 36957700#1 36957700#2 363454313"/>
+        <busStop id="2393971633" name="Ramakrishna Ashrama"/>
+        <busStop id="2393971549" name="Bengaluru High School"/>
+        <busStop id="2393859187" name="Chamarajapet"/>
+        <busStop id="1323690429" name="Makkala Koota"/>
+        <busStop id="2007574677" name="KR Market"/>
+        <busStop id="1632815594" name="Krishnarajendra Market"/>
+        <busStop id="2393966201" name="Binny Mill , Goodshed Road Gate"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="6776395" name="78A: Iskcon Temple =&gt; Kempegowda Bus Station" line="78A" type="bus" vClass="bus" completeness="0.07">
+        <route edges="372018370#0 372018370#1 139266401 31235676"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="6817995" name="K4" line="K4" type="bus" vClass="bus" completeness="0.27">
+        <route edges="23076481 169817241#1 169817241#2 454013130#0 454013130#1 36897680#0 36897680#1 244304928#0 244304928#1 244304928#2 244304928#3 310910082 763284659 37898955#0 37898955#1 37898955#2 461556532 148016888 22893740#0 22893740#1 154340361#0 154340361#1 154340361#2 154340361#3 154340361#4 154340361#5 154340361#6 760700376 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 180375724#0 180375724#1 36853150 766406229#0 766406229#1 766406229#2 766406229#3 766406229#4 766406229#5 766406228#0 766406228#1 461556535#0 461556535#1 461556535#2 461556535#3 461556535#4 461556535#5 461556535#6 461556535#7 763290547#0 763290547#1 763290547#2 763290547#3 763290547#4 763290547#5 763290547#6 763290547#7 763290547#8 124316745#0 124316745#1 124316745#3 124316745#4 124316745#5 124316745#6 124316745#7 124316745#8 763405053 691218619 498553630#0 263812623#0 263812623#2 263812623#3 263812623#4 263812623#5 263812623#6 263812623#7 263812623#8 263812623#9 263812623#10 638541497#0 638541497#1 638541497#2 638541497#3 638541497#4 638541497#5 638541497#6 638541497#7 638541497#8 638541497#9 638541497#10 638541497#11 638541497#12 638541497#13 638541497#15 638541497#16 638541497#17 638541497#18 638541497#19 638541497#20 638541497#21 126774193#1 126774193#2 126774193#3 126774193#4 126774193#5 126774193#6 126774193#7 126774193#8 126774193#9 126774193#10 126774193#12"/>
+        <busStop id="1739362330" name="Town Hall"/>
+        <busStop id="452414811" name="Corporation Circle (Cubbon Park)"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="3356616804" name="Richmond Circle"/>
+        <busStop id="1383996009" name="St. Joseph&apos;s College"/>
+        <busStop id="3344494904" name="Mayo Hall"/>
+        <busStop id="3730961538" name="MG Road"/>
+        <busStop id="1635922811" name="Trinity Circle"/>
+        <busStop id="1698055294" name="Halasuru"/>
+        <busStop id="2396425548" name="Lakshmipura Ulsoor"/>
+    </ptLine>
+    <ptLine id="6856311" name="252F: Peenya 2nd Stage =&gt; Kempegowda Bus Station" line="252F" type="bus" vClass="bus" completeness="0.03">
+        <route edges="372018370#0 372018370#1 139266401 498554152#0 498554152#1 498554152#2 498554151"/>
+        <busStop id="2398074914@6856311" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="6858376" name="K1: Central Silk Board =&gt; Peenya Satellite Bus Station" line="K1" type="bus" vClass="bus" completeness="0.17">
+        <route edges="464465186#0 464465186#2 464465186#3 464465186#4 464465186#5 464465186#6 464465186#7 464465186#8 464465186#9 464465186#10 464465186#11 464465186#12 464465186#13 464465186#14 464465205#0 464465205#1 464465205#2 464465205#3 464465205#4 464465205#5 464465205#6 464465205#8 464465205#9 464465205#10 464465205#11 763183691 638541495#0 638541495#1 638541495#2 638541495#3 638541495#4 638541495#5 638541495#7 638541495#8 638541495#9 172947338#1 224621537#1 484510041#1 484510041#2 484510041#5 72099280#0 72099280#1 72099280#2 72099280#3 72099280#4 328758433#0 328758433#1 328758433#3 544761382#1 544761382#2 544761380#0 544761378 542070647#1 542070647#3 763290544#0 763290544#1 763290544#2 763290544#3"/>
+        <busStop id="2401658294" name="Lakshmipura Ulsoor"/>
+        <busStop id="2401658592" name="Halasuru"/>
+        <busStop id="4595656669" name="Halasur Police Station"/>
+        <busStop id="2949043344" name="Lido Talkies"/>
+        <busStop id="287905435" name="Hasanath College"/>
+        <busStop id="3304155383" name="Dickenson Road"/>
+        <busStop id="2405357303" name="Maniksha Parade Ground"/>
+    </ptLine>
+    <ptLine id="7586676" name="226M: Bidadi =&gt; KR Market" line="226M" type="bus" vClass="bus" completeness="0.05">
+        <route edges="36958313#0 36958313#1 162581479 525778225#0 525778225#1 525778226#0 525778226#1 525778226#2 373574994#0 373574994#1 373574994#2 373574994#3 373574994#4 525778223#0 525778223#1"/>
+        <busStop id="2402160774" name="Royan Circle"/>
+        <busStop id="1632815594" name="Krishnarajendra Market"/>
+    </ptLine>
+    <ptLine id="7784213" name="226J: Kempegowda Bus Station =&gt; Thimmappana Palya" line="226J" type="bus" vClass="bus" completeness="0.08">
+        <route edges="28631871#0 28631871#1 28631871#2 28631871#3 28631871#4 28631871#5 28631871#6 28631871#7 31235671 150808476#0 150808476#1 150808476#2 150808476#3 150808476#4 36897658#0 36897658#1 36897658#2 36897658#3 36897658#5 36897658#7 36897658#8 36897658#9 36897658#10 36897658#11 36897658#13 36897658#14 36897658#15 36897658#16 36897658#17 36897685#0 36897685#1 36897685#3 36897685#4 36897685#5 36897685#6 36897685#7 36897685#8 525778226#0 525778226#1 525778226#2 23076199#0 23076199#1 23076199#2 23076199#3 23076199#4 23076199#5 23076199#6"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="2402160774" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="7841331" name="Namma Metro Purple Line (Mysore Road --&gt; Baiyyappanahalli)" line="Purple" type="subway" vClass="rail_urban" completeness="0.53">
+        <busStop id="-5760197788" name="Krantivira Sangolli Rayanna Railway Station"/>
+        <busStop id="-5760197800" name="Nadaprabhu Kempegowda Station, Majestic (Purple Line)"/>
+        <busStop id="-5760197802" name="Sir M Vishweshwariah - Central College"/>
+        <busStop id="-5760197799" name="Dr. B R Ambedkar Station, Vidhana Soudha"/>
+        <busStop id="-5760197798" name="Cubbon Park"/>
+        <busStop id="-5760197795" name="Mahatma Gandhi Road"/>
+        <busStop id="-5760197794" name="Trinity"/>
+        <busStop id="-5760197793" name="Halasuru"/>
+        <busStop id="5760197792" name="Indiranagar"/>
+    </ptLine>
+    <ptLine id="7842287" name="Namma Metro Green Line (Southbound)" line="Green" type="subway" vClass="rail_urban" completeness="0.17">
+        <route edges="568709017#0 568709017#1 549256482 343203596 549256481 549256480#0 549256480#1 549256479"/>
+        <busStop id="5464787094" name="Nadaprabhu Kempegowda Station, Majestic (Green Line)"/>
+        <busStop id="1548300484" name="Chikkapete"/>
+        <busStop id="1524381523" name="Krishna Rajendra Market"/>
+        <busStop id="1524381509" name="National College"/>
+        <busStop id="1437223296" name="Lalbagh"/>
+    </ptLine>
+    <ptLine id="8446422" name="102: KR Market =&gt; Sadashivanagara" line="102" type="bus" vClass="bus" completeness="0.38">
+        <busStop id="1632815594" name="Krishnarajendra Market"/>
+        <busStop id="1739362330" name="Town Hall"/>
+        <busStop id="2394042060" name="Corporation"/>
+        <busStop id="249087970" name="Mysore Bank"/>
+        <busStop id="5335240458" name="Maharani College, KR Circle"/>
+        <busStop id="663551443" name="Vidhana Soudha"/>
+    </ptLine>
+    <ptLine id="8446688" name="104: Kempegowda Bus Station =&gt; Sadashivanagara" line="104" type="bus" vClass="bus" completeness="0.11">
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="8447715" name="108B: Kempegowda Bus Station =&gt; Ganga Nagara" line="108B" type="bus" vClass="bus" completeness="0.13">
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="6019610757" name=""/>
+    </ptLine>
+    <ptLine id="8447720" name="108: KR Market =&gt; Ananda Nagara Hebbala" line="108" type="bus" vClass="bus" completeness="0.24">
+        <busStop id="1632815594" name="Krishnarajendra Market"/>
+        <busStop id="1739362330" name="Town Hall"/>
+        <busStop id="2394042060" name="Corporation"/>
+        <busStop id="249087970" name="Mysore Bank"/>
+        <busStop id="6019610757" name=""/>
+    </ptLine>
+    <ptLine id="8447764" name="218A: Kempegowda Bus Station =&gt; Kambipura" line="218A" type="bus" vClass="bus" completeness="0.08">
+        <route edges="28631871#0 28631871#1 28631871#2 28631871#3 28631871#4 28631871#5 28631871#6 28631871#7 31235671 150808476#0 150808476#1 150808476#2 150808476#3 150808476#4 36897658#0 36897658#1 36897658#2 36897658#3 36897658#5 36897658#7 36897658#8 36897658#9 36897658#10 36897658#11 36897658#13 36897658#14 36897658#15 36897658#16 36897658#17 36897685#0 36897685#1 36897685#3 36897685#4 36897685#5 36897685#6 36897685#7 36897685#8 525778226#0 525778226#1 525778226#2 23076199#0 23076199#1 23076199#2 23076199#3 23076199#4 23076199#5 23076199#6"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="2402160774" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="8447777" name="218: KR Market =&gt; Kambipura" line="218" type="bus" vClass="bus" completeness="0.08">
+        <route edges="28631871#0 28631871#1 28631871#2 28631871#3 28631871#4 28631871#5 28631871#6 28631871#7 31235671 150808476#0 150808476#1 150808476#2 150808476#3 150808476#4 36897658#0 36897658#1 36897658#2 36897658#3 36897658#5 36897658#7 36897658#8 36897658#9 36897658#10 36897658#11 36897658#13 36897658#14 36897658#15 36897658#16 36897658#17 36897685#0 36897685#1 36897685#3 36897685#4 36897685#5 36897685#6 36897685#7 36897685#8 525778226#0 525778226#1 525778226#2 23076199#0 23076199#1 23076199#2 23076199#3 23076199#4 23076199#5 23076199#6"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="2402160774" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="8593132" name="222A: Kempegowda Bus Station =&gt; Satellite Town Kengeri (Kengeri Upanagara)" line="222A" type="bus" vClass="bus" completeness="0.12">
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="5265674077" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="8825067" name="G2: Mayo Hall =&gt; Sarjapura Bus Stand" line="G2" type="bus" vClass="bus" completeness="0.14">
+        <route edges="327639080 635340513 325833350#0 325833350#1 325833350#2 325833350#4 27007398#0 27007398#1 27007398#3 27007398#4 28137491#1 28137491#2 764329017#0 764329017#1 764329017#2 401908499#0 401908499#1 763175333#0 763175333#1 763175333#2 763175333#3 763175333#4 763175333#5 38772795#0 38772795#1 38772795#2 38772795#4 38772795#5 38772795#6 38772795#7 38772795#9 38772795#10 38772795#11 462585138#1 764329016 462585137 8680571#0 8680571#1 8680571#3 8680571#4 8680571#5 8680571#6 8680571#7"/>
+        <busStop id="2406087671" name="ASC Center"/>
+        <busStop id="2406115674" name="Vannarapete"/>
+        <busStop id="5772182583" name="Ejipura Bus Stand"/>
+        <busStop id="5803875104" name="NGV Gate"/>
+    </ptLine>
+    <ptLine id="8855841" name="G2: Sarjapura Bus Stand =&gt; Mayo Hall" line="G2" type="bus" vClass="bus" completeness="0.21">
+        <route edges="370390351#0 370390351#5 370390351#6 370390351#7 370390351#8 370390351#9 370390351#10 370390351#11 370390351#13 370390351#14 462585135 763290549 462585136#0 -38772795#11 -38772795#10 -38772795#9 -38772795#7 -38772795#6 -38772795#5 -38772795#4 -38772795#2 -38772795#1 -38772795#0 -763175333#5 -763175333#4 -763175333#3 -763175333#2 -763175333#1 -763175333#0 27946101#0 27946101#1 27946101#2 763175332#0 763175332#1 763175332#2 763175332#3 763175332#4 124316968#0 124316968#1 124316968#2 146588537 638531680#0 638531680#1 638531680#2 638541493 719664029 638541495#0 638541495#1 638541495#2 638541495#3 638541495#4 638541495#5 638541495#7 638541495#8 638541495#9 38522039#0 38522039#1 38522039#2 325833356"/>
+        <busStop id="6017833820" name="Rajendranagar"/>
+        <busStop id="6017833821" name="Ejipura Junction"/>
+        <busStop id="-6017833822" name="Vannarapete"/>
+        <busStop id="6017833823" name="ASC Center"/>
+        <busStop id="6017833825" name="Military Accounts Office"/>
+        <busStop id="6017833826" name="Military Accounts Office"/>
+        <busStop id="253890237" name="Trinity Circle"/>
+    </ptLine>
+    <ptLine id="8858789" name="342F: Kempegowda Bus Station =&gt; Sarjapura Bus Stand" line="342F" type="bus" vClass="bus" completeness="0.23">
+        <route edges="368624554#0 368624554#1 691949961#0 691949961#1 372031016#0 372031016#1 498550660 368624555 498550659 139141579#0 139141579#1 580771983 31235670 760543008 36884551#0 36884551#1 251495490 150785556#0 150785556#1 150785556#2 150785556#3 150785556#4 779282846 779282844 764332430 150894905 52032727 638928392#0 638928392#1 638928392#2 638928392#3 638928392#4 638928392#5 638928392#6 638928392#7 638928392#8 781001561 22893740#0 22893740#1 26179365 148016866#0 148016866#1 36897704#0 36897704#1 36897704#2 36897705#0 36897705#1 36897705#2 764329021 764329022#0 764329022#1 764329022#2 328836685#0 328836685#2 328836685#3 328836685#4 328836685#5 328836685#6 328836685#7 328836685#8 328836685#9 766406976#0 766406976#1 36853146#0 36853146#1 36853146#2 36853146#3 393699924 638928396 172899264#0 172899264#1 172899264#2 172899264#3 172899264#4 23078462#0 23078462#1 23078156#0 23078156#1 23078156#2 23078156#3 23078156#4 23078156#5 639010020#0 639010020#1 172899344#0 172899344#1 172899344#2 172899344#3"/>
+        <busStop id="5335240458" name="Maharani College, KR Circle"/>
+        <busStop id="3943325827" name="KR Circle"/>
+        <busStop id="3356616803@8858789" name="Corporation, Mission Road (Towards Subbiah Circle)"/>
+        <busStop id="1650296781" name="Subbaiah Circle"/>
+        <busStop id="4843099635" name="KH Road"/>
+        <busStop id="6019408108" name="Shanthi Nagara Bus Station"/>
+        <busStop id="6019408109" name="Wilson Garden Police Station"/>
+        <busStop id="6019408110" name="Wilson Garden 12th Cross"/>
+    </ptLine>
+    <ptLine id="8861172" name="342F: Sarjapura Bus Stand =&gt; Kempegowda Bus Station" line="342F" type="bus" vClass="bus" completeness="0.16">
+        <route edges="165808979#2 165808979#3 165808979#4 165808979#5 172899268#0 172899268#1 172899268#2 172899268#3 172899268#4 172899268#5 172899268#7 766406231 375964869 375964865 639010022#1 639010022#2 375964867#1 375964867#2 36897703#0 36897703#1 763282652 36965407 152462760 375964868#0 375964868#1 375964868#2 375964868#3 224618934#0 224618934#1 224618934#2 224618934#3 224618934#4 224618934#5 224618934#7 224618934#8 224618934#9 224618934#10 224618934#11 148016866#0 148016866#1 148016873#0 148016873#1 461556532 23076927#0 23076927#1 23076927#2 23076927#3 23076927#4 23076927#5 764332432#2 36907507#0 36907507#1 36907507#2 36907507#3 36907507#4 36907507#5 36907507#6 150808480 150808482#0 150808482#1 150808482#2 150808482#3 28631881#0 28631881#1 402911910 139266401"/>
+        <busStop id="7132401123" name="Shantinagara TTMC"/>
+        <busStop id="2396890811" name="KH Road, Double Road"/>
+        <busStop id="597363270" name="Hudson Circle"/>
+        <busStop id="2394042060" name="Corporation"/>
+        <busStop id="249087970" name="Mysore Bank"/>
+    </ptLine>
+    <ptLine id="9219524" name="G6: Shirke KHB Quarters =&gt; Shanthinagara TTMC" line="G6" type="bus" vClass="bus" completeness="0.23">
+        <route edges="36958313#0 36958313#1 162581479 525778225#0 525778225#1 36885143#0 36885143#1 36885143#2 36885143#3 36885143#4 36885143#5 36885143#6 36885143#7 36885143#8 36885143#9 36885143#10 767326471 36897684#0 36897684#1 760543009#0 760543009#1 760543009#2 172891297#0 172891297#1 172891297#2 172891297#3 172891297#4 172891297#5 244304928#0 244304928#1 244304928#2 244304928#3 310910082 763284659 36897705#0 36897705#1 36897705#2 764329021 764329022#0 764329022#1 764329022#2 328836685#0 328836685#2 328836685#3 328836685#4 328836685#5 328836685#6 328836685#7 328836685#8 328836685#9 766406976#0 766406976#1 36853146#0 36853146#1 36853146#2 36853146#3 638928395 393699921#0 393699921#1"/>
+        <busStop id="7132418223" name="Vinayaka Talkies"/>
+        <busStop id="7132418221" name="KR Market"/>
+        <busStop id="1739362330" name="Town Hall"/>
+        <busStop id="3356616803@8858789" name="Corporation, Mission Road (Towards Subbiah Circle)"/>
+        <busStop id="1650296781" name="Subbaiah Circle"/>
+        <busStop id="4843099635" name="KH Road"/>
+        <busStop id="7132401123@9219524" name="Shantinagara TTMC"/>
+    </ptLine>
+    <ptLine id="9220653" name="500: Banashankari TTMC =&gt; Banashankari TTMC" line="500" type="bus" vClass="bus" completeness="0.23">
+        <busStop id="2393969380" name="Vinayaka Talkies"/>
+        <busStop id="1632815594" name="Krishnarajendra Market"/>
+        <busStop id="1739362330" name="Town Hall"/>
+        <busStop id="3356616803" name="Corporation, Mission Road (Towards Subbiah Circle)"/>
+        <busStop id="1650296781" name="Subbaiah Circle"/>
+        <busStop id="4843099635" name="KH Road"/>
+        <busStop id="6019408108" name="Shanthi Nagara Bus Station"/>
+    </ptLine>
+    <ptLine id="9225303" name="220D: KR Market =&gt; Doddabele" line="220D" type="bus" vClass="bus" completeness="0.08">
+        <route edges="28631871#0 28631871#1 28631871#2 28631871#3 28631871#4 28631871#5 28631871#6 28631871#7 31235671 150808476#0 150808476#1 150808476#2 150808476#3 150808476#4 36897658#0 36897658#1 36897658#2 36897658#3 36897658#5 36897658#7 36897658#8 36897658#9 36897658#10 36897658#11 36897658#13 36897658#14 36897658#15 36897658#16 36897658#17 36897685#0 36897685#1 36897685#3 36897685#4 36897685#5 36897685#6 36897685#7 36897685#8 525778226#0 525778226#1 525778226#2 23076199#0 23076199#1 23076199#2 23076199#3 23076199#4 23076199#5 23076199#6"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="2402160774" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9228168" name="222N: Kempegowda Bus Station =&gt; Jnana Bharathi Layout" line="222N" type="bus" vClass="bus" completeness="0.11">
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="5265674077" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9228270" name="201M: Hampinagara =&gt; Jeevanbheema Nagara" line="201M" type="bus" vClass="bus" completeness="0.08">
+        <route edges="28631871#0 28631871#1 28631871#2 28631871#3 28631871#4 28631871#5 28631871#6 28631871#7 31235671 150808476#0 150808476#1 150808476#2 150808476#3 150808476#4 36897658#0 36897658#1 36897658#2 36897658#3 36897658#5 36897658#7 36897658#8 36897658#9 36897658#10 36897658#11 36897658#13 36897658#14 36897658#15 36897658#16 36897658#17 36897685#0 36897685#1 36897685#3 36897685#4 36897685#5 36897685#6 36897685#7 36897685#8 525778226#0 525778226#1 525778226#2 23076199#0 23076199#1 23076199#2 23076199#3 23076199#4 23076199#5 23076199#6"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="2402160774" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9231890" name="223E: KR Market =&gt; Ramasandra" line="223E" type="bus" vClass="bus" completeness="0.07">
+        <busStop id="1632815594" name="Krishnarajendra Market"/>
+        <busStop id="5265674077" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9234758" name="234E: Kempegowda Bus Station =&gt; Ullala Satelite Town" line="234E" type="bus" vClass="bus" completeness="0.08">
+        <route edges="28631871#0 28631871#1 28631871#2 28631871#3 28631871#4 28631871#5 28631871#6 28631871#7 31235671 150808476#0 150808476#1 150808476#2 150808476#3 150808476#4 36897658#0 36897658#1 36897658#2 36897658#3 36897658#5 36897658#7 36897658#8 36897658#9 36897658#10 36897658#11 36897658#13 36897658#14 36897658#15 36897658#16 36897658#17 36897685#0 36897685#1 36897685#3 36897685#4 36897685#5 36897685#6 36897685#7 36897685#8 525778226#0 525778226#1 525778226#2 23076199#0 23076199#1 23076199#2 23076199#3 23076199#4 23076199#5 23076199#6"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="2402160774" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9234769" name="225C: Kempegowda Bus Station =&gt; BEML Layout 5th Stage" line="225C" type="bus" vClass="bus" completeness="0.14">
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="5265674077" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9234795" name="227C: KR Market =&gt; Bheemanakuppe" line="227C" type="bus" vClass="bus" completeness="0.08">
+        <route edges="28631871#0 28631871#1 28631871#2 28631871#3 28631871#4 28631871#5 28631871#6 28631871#7 31235671 150808476#0 150808476#1 150808476#2 150808476#3 150808476#4 36897658#0 36897658#1 36897658#2 36897658#3 36897658#5 36897658#7 36897658#8 36897658#9 36897658#10 36897658#11 36897658#13 36897658#14 36897658#15 36897658#16 36897658#17 36897685#0 36897685#1 36897685#3 36897685#4 36897685#5 36897685#6 36897685#7 36897685#8 525778226#0 525778226#1 525778226#2 23076199#0 23076199#1 23076199#2 23076199#3 23076199#4 23076199#5 23076199#6"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="2402160774" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9234820" name="223D: KR Market =&gt; Dodda Basti" line="223D" type="bus" vClass="bus" completeness="0.07">
+        <busStop id="1632815594" name="Krishnarajendra Market"/>
+        <busStop id="5265674077" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9236684" name="89C: Kempegowda Bus Station =&gt; Cauvery Nagara" line="89C" type="bus" vClass="bus" completeness="0.08">
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="9236687" name="77E: Nandini Layout =&gt; KR Market" line="77E" type="bus" vClass="bus" completeness="0.23">
+        <busStop id="1521343675" name="Magadi Road 10th Cross"/>
+        <busStop id="1521036512" name="Magadi Road 5th Cross"/>
+        <busStop id="249084526" name="Magadi Road 1st Cross"/>
+        <busStop id="6222268366" name="Hunasemara"/>
+        <busStop id="6222268365" name="Angalaparameshwari Temple"/>
+        <busStop id="1806969494" name="Binny Mill"/>
+    </ptLine>
+    <ptLine id="9236689" name="96G: Kempegowda Bus Station =&gt; Shankarnagh" line="96G" type="bus" vClass="bus" completeness="0.06">
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="9242269" name="227A: KR Market =&gt; Mayasandra" line="227A" type="bus" vClass="bus" completeness="0.08">
+        <route edges="28631871#0 28631871#1 28631871#2 28631871#3 28631871#4 28631871#5 28631871#6 28631871#7 31235671 150808476#0 150808476#1 150808476#2 150808476#3 150808476#4 36897658#0 36897658#1 36897658#2 36897658#3 36897658#5 36897658#7 36897658#8 36897658#9 36897658#10 36897658#11 36897658#13 36897658#14 36897658#15 36897658#16 36897658#17 36897685#0 36897685#1 36897685#3 36897685#4 36897685#5 36897685#6 36897685#7 36897685#8 525778226#0 525778226#1 525778226#2 23076199#0 23076199#1 23076199#2 23076199#3 23076199#4 23076199#5 23076199#6"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="2402160774" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9242339" name="227N: KR Market =&gt; Punagumaranahalli" line="227N" type="bus" vClass="bus" completeness="0.08">
+        <route edges="28631871#0 28631871#1 28631871#2 28631871#3 28631871#4 28631871#5 28631871#6 28631871#7 31235671 150808476#0 150808476#1 150808476#2 150808476#3 150808476#4 36897658#0 36897658#1 36897658#2 36897658#3 36897658#5 36897658#7 36897658#8 36897658#9 36897658#10 36897658#11 36897658#13 36897658#14 36897658#15 36897658#16 36897658#17 36897685#0 36897685#1 36897685#3 36897685#4 36897685#5 36897685#6 36897685#7 36897685#8 525778226#0 525778226#1 525778226#2 23076199#0 23076199#1 23076199#2 23076199#3 23076199#4 23076199#5 23076199#6"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+        <busStop id="2393966538" name="Cottonpet Hospital Super Talkies"/>
+        <busStop id="2402160774" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9243786" name="KIAS9: Kempegowda Bus Station =&gt; Kempegowda International Airport" line="KIAS9" type="bus" vClass="bus" completeness="0.06">
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="9385434" name="250P: Kempegowda Bus Station =&gt; Chikka Banavara" line="250P" type="bus" vClass="bus" completeness="0.03">
+        <route edges="498550660 368624555 498550659 139141579#0 139141579#1 580771983 36957700#0 36957700#1 36957700#2 363454313"/>
+        <busStop id="2398074914" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="9385446" name="169: Cauvery Nagara =&gt; Jeevanahalli" line="169" type="bus" vClass="bus" completeness="0.10">
+        <route edges="23515741#0 23515741#1 107215079#0 107215079#1 107215079#3 544761381#0 544761381#1 544761383#1 542070644#0 542070644#1 542070644#2 542070644#3 72099282 172903814#0 172903814#1 172903814#2"/>
+        <busStop id="3740957800" name="Manikshaw Parade Ground"/>
+        <busStop id="7108562603" name="Commercial Street"/>
+        <busStop id="2268440721" name="Dickenson Road"/>
+    </ptLine>
+    <ptLine id="9385458" name="TR12: Srinagara Bus Station =&gt; RMC Yard" line="TR12" type="bus" vClass="bus" completeness="0.22">
+        <route edges="491480310#0 491480310#1 23060963#0 23060963#1 23060963#2 23060963#3 23060963#4 23060963#6 23060963#7 23060963#8 142487543 759364437#0 759364437#1 142487528 555368896#0 555368896#1 555368896#2 555368896#3 555368896#4 -555368897#4 -555368897#3 -555368897#2 -555368897#0 162697329#0 162697329#1 162697329#2 162697329#3 162697329#4 759364436 190144810#0 190144810#1 162569524#0 162569524#1 162569524#2 162569524#3 162569524#4 23076199#0 23076199#1 23076199#2 23076199#3 23076199#4 23076199#5 23076199#6 -767326470#2 -767326470#1 -767326470#0 440327198 764571649 182819731#1 182819731#2 182819731#3 182819731#4 182819735 759364433 170932623"/>
+        <busStop id="2396303951" name="Hanumantha Nagara Syndicate Bank"/>
+        <busStop id="248838952" name="Kohinoor Ground"/>
+        <busStop id="2393971633" name="Ramakrishna Ashrama"/>
+        <busStop id="2393971549" name="Bengaluru High School"/>
+        <busStop id="2393859187" name="Chamarajapet"/>
+        <busStop id="1323690429" name="Makkala Koota"/>
+        <busStop id="5265674077" name="Royan Circle"/>
+    </ptLine>
+    <ptLine id="9385474" name="258CC: Kempegowda Bus Station =&gt; Anjaneya Temple Nelamangala" line="258CC" type="bus" vClass="bus" completeness="0.03">
+        <route edges="498550660 402911911 760493329 760493330 140357135#0 140357135#1 140357135#2"/>
+        <busStop id="3755675146" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="9412775" name="52: Yeshwanthapura TTMC =&gt; Raghavendra Colony" line="52" type="bus" vClass="bus" completeness="0.43">
+        <route edges="36884363 737502997#1 132047069 372018380 139141579#0 139141579#1 580771983 31235670 760543008 36884551#0 36884551#1 251495490 150785556#0 150785556#1 150785556#2 150785556#3 150785556#4 779282846 779282844 764332430 150894905 52032727 391160983 638928392#0 638928392#1 638928392#2 638928392#3 638928392#4 638928392#5 638928392#6 638928392#7 638928392#8 781001561 22893740#0 22893740#1 26179365 148016866#0 148016866#1 36897704#0 36897704#1 36897704#2 638928393#0 638928393#1 36897679 688824223#0 688824223#1 688824223#2 688824223#3 23081608#0 23081608#1 23081608#2 763175323#0 763175323#1 763175323#2 150357930#0 150357930#1 150357930#2 688824225#1 688824225#2 -154340364#7 -154340364#5 -154340364#4 -154340364#3 -154340364#2 -154340364#1 -154340364#0 37338256#0 37338256#1 37338256#2 37338256#3 -162697329#4 -162697329#3 -162697329#2 -162697329#1 -162697329#0 -23076215#5 -23076215#4 -23076215#3 -23076215#2 -23076215#1 -23076215#0"/>
+        <busStop id="2398094147" name="Khodays Circle"/>
+        <busStop id="5335240458" name="Maharani College, KR Circle"/>
+        <busStop id="3943325827@9412775" name="KR Circle"/>
+        <busStop id="663317710" name="St Marthas Hospital"/>
+        <busStop id="2393695722" name="Corporation Circle"/>
+        <busStop id="1568922532" name="Town Hall"/>
+        <busStop id="6460998320" name="KR Market"/>
+        <busStop id="-7105069825" name="Makkala Koota"/>
+        <busStop id="-7105069823" name="Chamarajapet"/>
+    </ptLine>
+    <ptLine id="9412862" name="251B: Kempegowda Bus Station =&gt; Rajanukunte" line="251B" type="bus" vClass="bus" completeness="0.25">
+        <busStop id="3755675146" name="Kempegowda Bus Station"/>
+    </ptLine>
+    <ptLine id="9574049" name="Bus 341C: Kodandaramanagara =&gt; KR Market" line="341C" type="bus" vClass="bus" completeness="0.21">
+        <route edges="639010018#0 639010018#1 639010018#2 639010018#3 639010018#4 639010018#5 145409123#0 145409123#1 145409123#2 145409123#3 36853145#0 36853145#1 36853145#2 23078145#0 169453737#0 169453737#1 169453737#3 169453737#4 169453737#5 169453737#6 169453737#7 169453737#8 169453737#9 169453737#10 169453737#11 23036323#0 23036323#1 23036323#2 462585115#0 462585115#1 462585115#2 462585115#3 763175324 143368260#0 143368260#1 688824223#0 688824223#1 688824223#2 688824223#3 23081608#0 23081608#1 23081608#2 763175323#0 763175323#1 763175323#2 150357930#0 150357930#1 150357930#2 -688883747#0"/>
+        <busStop id="4349257795" name="Lalbhag Hopcoms"/>
+        <busStop id="6460998309" name="Lalbag Main Gate"/>
+        <busStop id="1568922532" name="Town Hall"/>
+        <busStop id="6460998320" name="KR Market"/>
+    </ptLine>
+    <ptLine id="9574599" name="Bus 341C: KR Market =&gt; Kodandaramanagara" line="341C" type="bus" vClass="bus" completeness="0.16">
+        <busStop id="6461616258" name="Basappa Circle"/>
+        <busStop id="6461616259" name="Lalbagh Main Gate"/>
+        <busStop id="4349360994" name="Lalbhag Hop Coms"/>
+    </ptLine>
+    <ptLine id="9617110" name="Bus V342F: Sarjapura Bus Stand =&gt; Kempegowda Bus Stand" line="V342F" type="bus" vClass="bus" completeness="0.16">
+        <route edges="165808979#2 165808979#3 165808979#4 165808979#5 172899268#0 172899268#1 172899268#2 172899268#3 172899268#4 172899268#5 172899268#7 766406231 375964869 375964865 639010022#1 639010022#2 375964867#1 375964867#2 36897703#0 36897703#1 763282652 36965407 152462760 375964868#0 375964868#1 375964868#2 375964868#3 224618934#0 224618934#1 224618934#2 224618934#3 224618934#4 224618934#5 224618934#7 224618934#8 224618934#9 224618934#10 224618934#11 148016866#0 148016866#1 148016873#0 148016873#1 461556532 23076927#0 23076927#1 23076927#2 23076927#3 23076927#4 23076927#5 764332432#2 36907507#0 36907507#1 36907507#2 36907507#3 36907507#4 36907507#5 36907507#6 150808480 150808482#0 150808482#1 150808482#2 150808482#3 28631881#0 28631881#1 402911910 139266401"/>
+        <busStop id="6019408109@9617110" name="Wilson Garden Police Station"/>
+        <busStop id="2396890811" name="KH Road, Double Road"/>
+        <busStop id="597363270" name="Hudson Circle"/>
+        <busStop id="2394042060" name="Corporation"/>
+        <busStop id="249087970" name="Mysore Bank"/>
+    </ptLine>
+    <ptLine id="9617652" name="Bus V342F: Kempegowda Bus Station =&gt; Sarjapura Bus Stand" line="V342F" type="bus" vClass="bus" completeness="0.22">
+        <route edges="31235674 691949961#0 691949961#1 372031016#0 372031016#1 498550660 368624555 498550659 139141579#0 139141579#1 580771983 31235670 760543008 36884551#0 36884551#1 251495490 150785556#0 150785556#1 150785556#2 150785556#3 150785556#4 779282846 779282844 764332430 150894905 52032727 391160983 638928392#0 638928392#1 638928392#2 638928392#3 638928392#4 638928392#5 638928392#6 638928392#7 638928392#8 781001561 22893740#0 22893740#1 26179365 148016866#0 148016866#1 36897704#0 36897704#1 36897704#2 36897705#0 36897705#1 36897705#2 764329021 764329022#0 764329022#1 764329022#2 328836685#0 328836685#2 328836685#3 328836685#4 328836685#5 328836685#6 328836685#7 328836685#8 328836685#9 766406976#0 766406976#1 36853146#0 36853146#1 36853146#2 36853146#3 393699924 638928396 172899264#0 172899264#1 172899264#2 172899264#3 172899264#4 23078462#0 23078462#1 23078156#0 23078156#1 23078156#2 23078156#3 23078156#4 23078156#5 639010020#0 639010020#1 172899344#0 172899344#1 172899344#2 172899344#3"/>
+        <busStop id="5335240458" name="Maharani College, KR Circle"/>
+        <busStop id="3943325827@9412775" name="KR Circle"/>
+        <busStop id="3356616803@8858789" name="Corporation, Mission Road (Towards Subbiah Circle)"/>
+        <busStop id="1650296781" name="Subbaiah Circle"/>
+        <busStop id="4843099635" name="KH Road"/>
+        <busStop id="6019408108" name="Shanthi Nagara Bus Station"/>
+        <busStop id="6019408109" name="Wilson Garden Police Station"/>
+        <busStop id="6019408110" name="Wilson Garden 12th Cross"/>
+    </ptLine>
+    <ptLine id="9740026" name="TR7: Banashankari 3rd Stage 2nd Phase =&gt; Jeevanahalli" line="TR7" type="bus" vClass="bus" completeness="0.39">
+        <route edges="23054647#0 23054647#1 23054647#2 23054647#3 23054647#4 23054647#5 23036323#0 23036323#1 23036323#2 112243683#0 112243683#1 112243683#2 112243683#3 112243683#4 112243683#5 112243683#6 112243683#7 8681855#0 8681855#1 36965408#1 766406225 22562303 553447543 639010022#1 639010022#2 375964867#1 375964867#2 375964866 -747182858 766406230 30332639 766406229#0 766406229#1 766406229#2 766406229#3 766406229#4 766406229#5 208698150 461556535#0 461556535#1 461556535#2 461556535#3 461556535#4 461556535#5 461556535#6 461556535#7 23029696#1 23029696#2 23029696#3 23029696#4 23029696#6 23029696#7 23029696#8 26283651#0 26283651#1 26283651#2 26283651#3 26283651#4 26283651#5 30332854#0 766406223#0 107215083#0 107215083#1 107215083#2 107215083#4 359476589 359476587 23515741#0 23515741#1 107215079#0 107215079#1 107215079#3 544761381#0 544761381#1 544761383#1 542070644#0 542070644#1 542070644#2 542070644#3 72099282 172903814#0 172903814#1 172903814#2"/>
+        <busStop id="2394630008" name="Lalbagh West Gate, V V Puram"/>
+        <busStop id="2394039396" name="Minarva Circle, Rashtriya Vidyalaya Road"/>
+        <busStop id="6461616259" name="Lalbagh Main Gate"/>
+        <busStop id="2396447785" name="Shanthinagara Bus Stop KH Road"/>
+        <busStop id="2396890811" name="KH Road, Double Road"/>
+        <busStop id="3356616804@9740026" name="Richmond Circle"/>
+        <busStop id="1383996009" name="St. Joseph&apos;s College"/>
+        <busStop id="429001259" name="State Bank India Garage"/>
+        <busStop id="4144220197" name="Chinnaswamy Stadium"/>
+    </ptLine>
+    <ptLine id="9740028" name="404J: 5th Phase Yalahanka New Town =&gt; Shanthinagara TTMC" line="404J" type="bus" vClass="bus" completeness="0.50">
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+    </ptLine>
+    <ptLine id="9740032" name="126A: KR Market =&gt; Jeevanahalli" line="126A" type="bus" vClass="bus" completeness="0.50">
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+    </ptLine>
+    <ptLine id="9740033" name="TR4A: Jaga Jeevan Ram Nagara =&gt; RK Hegde Nagara" line="TR4A" type="bus" vClass="bus" completeness="0.67">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+    </ptLine>
+    <ptLine id="9740035" name="MBS14: JP Nagara 3rd Phase =&gt; RK Hegde Nagara" line="MBS14" type="bus" vClass="bus" completeness="0.17">
+        <route edges="553447543 639010022#1 639010022#2 375964867#1 375964867#2 375964866 -747182858 766406230 30332639 766406229#0 766406229#1 766406229#2 766406229#3 766406229#4 766406229#5 208698150 461556535#0 461556535#1 461556535#2 461556535#3 461556535#4 461556535#5 461556535#6 461556535#7 23029696#1 23029696#2 23029696#3 23029696#4 23029696#6 23029696#7 23029696#8 26283651#0 26283651#1 26283651#2 26283651#3 26283651#4 26283651#5 766406224#0 323813903#1 323813903#2 323813903#3 763290544#0 763290544#1 763290544#2 763290544#3"/>
+        <busStop id="2396447785" name="Shanthinagara Bus Stop KH Road"/>
+        <busStop id="2396890811" name="KH Road, Double Road"/>
+        <busStop id="3356616804@9740026" name="Richmond Circle"/>
+        <busStop id="1383996009" name="St. Joseph&apos;s College"/>
+        <busStop id="429001259" name="State Bank India Garage"/>
+        <busStop id="2397087882" name="Anil Kumble Circle"/>
+    </ptLine>
+    <ptLine id="9740036" name="K6: Kalyananagara Bus Stand =&gt; Jambu Savari Dinne" line="K6" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740046" name="37: Shivajinagara Bus Station =&gt; Srinagara Bus Station" line="37" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740049" name="368: Shivajinagara Bus Station =&gt; Bannerughatta National Park" line="368" type="bus" vClass="bus" completeness="0.75">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+    </ptLine>
+    <ptLine id="9740057" name="342WA: Shivajinagara Bus Station =&gt; Kuthaganahalli" line="342WA" type="bus" vClass="bus" completeness="0.67">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+    </ptLine>
+    <ptLine id="9740059" name="34: Shivajinagara Bus Station =&gt; Hoskerehalli" line="34" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740128" name="27N: Shivajinagara Bus Station =&gt; Mahadeshwara Nagara" line="27N" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740129" name="27E: Shivajinagara Bus Station =&gt; JP Nagara 3rd Phase" line="27E" type="bus" vClass="bus" completeness="0.67">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+    </ptLine>
+    <ptLine id="9740130" name="27A: Shivajinagara Bus Station =&gt; NS Palya" line="27A" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740134" name="27: Shivajinagara Bus Station =&gt; Mahadeshwara Nagara" line="27" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740139" name="234F: Shivajinagara Bus Station =&gt; AGS Layout" line="234F" type="bus" vClass="bus" completeness="0.75">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+    </ptLine>
+    <ptLine id="9740143" name="215U: Shivajinagara Bus Station =&gt; Kothanuru Hari Nagara" line="215U" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740144" name="210GA: Shivajinagara Bus Station =&gt; Kumaraswamy Layout West" line="210GA" type="bus" vClass="bus" completeness="0.75">
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740145" name="210FA: Shivajinagara Bus Station =&gt; Poornaprajna Layout" line="210FA" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740146" name="197: Jeevanbheema Nagara =&gt; Sultanpalya" line="197" type="bus" vClass="bus" completeness="0.25">
+        <route edges="464465186#0 464465186#2 464465186#3 464465186#4 464465186#5 464465186#6 464465186#7 464465186#8 464465186#9 464465186#10 464465186#11 464465186#12 464465186#13 464465186#14 464465205#0 464465205#1 464465205#2 464465205#3 464465205#4 464465205#5 464465205#6 464465205#8 464465205#9 464465205#10 464465205#11 763183691 638541495#0 638541495#1 638541495#2 638541495#3 638541495#4 638541495#5 638541495#7 638541495#8 638541495#9 172947338#1 224621537#1 484510041#1 484510041#2 484510041#5 72099280#0 72099280#1 72099280#2 72099280#3 72099280#4 328758433#0 328758433#1 328758433#3 544761382#1 544761382#2 544761380#0 544761378 542070647#1 542070647#3 763290544#0 763290544#1 763290544#2 763290544#3"/>
+        <busStop id="2401658294" name="Lakshmipura Ulsoor"/>
+        <busStop id="2401658592" name="Halasuru"/>
+        <busStop id="4595656669" name="Halasur Police Station"/>
+        <busStop id="2949043344" name="Lido Talkies"/>
+        <busStop id="7156942405" name="Electric B Station"/>
+        <busStop id="287905435" name="Hasanath College"/>
+        <busStop id="3304155383" name="Dickenson Road"/>
+        <busStop id="2405357303" name="Maniksha Parade Ground"/>
+    </ptLine>
+    <ptLine id="9740147" name="182: Shivajinagara Bus Station =&gt; Padmanabha Nagara" line="182" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740148" name="166: Shivajinagara Bus Station =&gt; 1st Block Koramangala" line="166" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740150" name="161D: Shivajinagara Bus Station =&gt; BTM Layout Kuvempu Nagara" line="161D" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740151" name="161B: Shivajinagara Bus Station =&gt; Jai Bheema Nagara" line="161B" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740152" name="15K: Shivajinagara Bus Station =&gt; Faizabad" line="15K" type="bus" vClass="bus" completeness="0.75">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+    </ptLine>
+    <ptLine id="9740153" name="155: Shivajinagara Bus Station =&gt; Jaga Jeevan Ram Nagara" line="155" type="bus" vClass="bus" completeness="0.75">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+    </ptLine>
+    <ptLine id="9740154" name="154: Shivajinagara Bus Station =&gt; Vinayaka Nagara Old Gudadahalli" line="154" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740155" name="144K: Neelasandra Rose Garden =&gt; Kaval Byrasandra" line="144K" type="bus" vClass="bus" completeness="0.32">
+        <route edges="28126587#0 28126587#1 28126587#3 28126587#4 28126587#6 28126587#8 28126587#9 -401993930#5 -401993930#4 -401993930#3 -401993930#2 -401993930#0 -763293417#1 -763293417#0 -763293418#6 -763293418#5 -763293418#4 -763293418#3 -763293418#2 -763293418#1 -763293418#0 -401908497#2 -401908497#1 -401908497#0 401993919#0 401993919#1 401993919#2 763175330#0 763175330#1 763175330#2 763175330#3 763175330#4 763175330#5 239572010#0 239572010#1 763290548#0 763290548#1 763290548#2 763290547#0 763290547#1 763290547#2 763290547#3 763290547#4 763290547#5 763290547#6 763290547#7 763290547#8 124316745#0 124316745#1 124316745#3 124316745#4 124316745#5 124316745#6 124316745#7 124316745#8 763405053 691218619 498553630#0 544759837#0 544759837#1 544759838#1 435249314#1 435249314#2 435249314#3 435249314#4 435249314#5 323813903#1 323813903#2 323813903#3 763290544#0 763290544#1 763290544#2 763290544#3"/>
+        <busStop id="7132495622" name="Neelasandra Rose Garden"/>
+        <busStop id="-7132495620" name="Neelasandra Bus Stand"/>
+        <busStop id="-2406087672" name="Austin Town"/>
+        <busStop id="2406088640" name="Philomenas Hospital"/>
+        <busStop id="6584009983" name="St Patrick&apos;s Church"/>
+        <busStop id="3344494904" name="Mayo Hall"/>
+        <busStop id="7132452575" name="MG Road Metro Station"/>
+        <busStop id="2397087882" name="Anil Kumble Circle"/>
+    </ptLine>
+    <ptLine id="9740156" name="144E: Shivajinagara Bus Station =&gt; Neelasandra Rose Garden" line="144E" type="bus" vClass="bus" completeness="0.90">
+        <route edges="23515741#0 23515741#1 107215079#0 107215079#1 107215079#3 544761381#0 544761381#1 544761383#1 147859357#1 147859357#2 325833345#1 638541502 325833350#0 325833350#1 325833350#2 325833350#4 132191817#0 132191817#1 132191817#2 132191817#3 133632534#0 133632534#1 133632534#2 133632534#3 133632534#6 764329018 57885669#0 57885669#1 57885669#2 57885669#3 57885669#4 401908497#0 401908497#1 401908497#2 763293418#0 763293418#1 763293418#2 763293418#3 763293418#4 763293418#5 763293418#6 763293417#0 763293417#1 401993930#0 401993930#2 401993930#3 401993930#4 401993930#5 -28126587#9 -28126587#8 -28126587#6 -28126587#4 -28126587#3 -28126587#1 -28126587#0"/>
+        <busStop id="3740957800" name="Manikshaw Parade Ground"/>
+        <busStop id="4846787925" name="Mayo Hall"/>
+        <busStop id="7132495632" name="Garuda Mall"/>
+        <busStop id="7132495629" name="D&apos;Souza Circle"/>
+        <busStop id="2396896553" name="Lifestyle"/>
+        <busStop id="4307590416" name="Philomenas Hospital"/>
+        <busStop id="7132495626" name="Austin Town"/>
+        <busStop id="2406538301" name="Neelasandra Bus Stand"/>
+        <busStop id="-2406537990" name="Neelasandra Rose Garden"/>
+    </ptLine>
+    <ptLine id="9740157" name="144: Shivajinagara Bus Station =&gt; Neelasandra Bus Stand" line="144" type="bus" vClass="bus" completeness="0.89">
+        <route edges="23515741#0 23515741#1 107215079#0 107215079#1 107215079#3 544761381#0 544761381#1 544761383#1 147859357#1 147859357#2 325833345#1 638541502 325833350#0 325833350#1 325833350#2 325833350#4 132191817#0 132191817#1 132191817#2 132191817#3 133632534#0 133632534#1 133632534#2 133632534#3 133632534#6 764329018 57885669#0 57885669#1 57885669#2 57885669#3 57885669#4 401908497#0 401908497#1 401908497#2 763293418#0 763293418#1 763293418#2 763293418#3 763293418#4 763293418#5 763293418#6 763293417#0 763293417#1"/>
+        <busStop id="3740957800" name="Manikshaw Parade Ground"/>
+        <busStop id="4846787925" name="Mayo Hall"/>
+        <busStop id="7132495632" name="Garuda Mall"/>
+        <busStop id="7132495629" name="D&apos;Souza Circle"/>
+        <busStop id="2396896553" name="Lifestyle"/>
+        <busStop id="4307590416" name="Philomenas Hospital"/>
+        <busStop id="7132495626" name="Austin Town"/>
+        <busStop id="2406538301" name="Neelasandra Bus Stand"/>
+    </ptLine>
+    <ptLine id="9740158" name="13S: Sultanpalya =&gt; JHBCS Layout" line="13S" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740159" name="13K: Shivajinagara Bus Station =&gt; Minaznagara" line="13K" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740160" name="13J: Shivajinagara Bus Station =&gt; Hoskerehalli" line="13J" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740161" name="13H: Shivajinagara Bus Station =&gt; AGS Layout Arehalli" line="13H" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740162" name="13E: Shivajinagara Bus Station =&gt; Banashankari 3rd Stage 2nd Phase" line="13E" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740163" name="13D: Shivajinagara Bus Station =&gt; Kadirenahalli Park" line="13D" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740164" name="13C: Shivajinagara Bus Station =&gt; Kumaraswamy Layout" line="13C" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740165" name="13A: Shivajinagara Bus Station =&gt; West Cross Kumaraswamy Layout" line="13A" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740167" name="13: Shivajinagara Bus Station =&gt; Banashankari TTMC" line="13" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740174" name="37E: Girinagara 2nd Stage =&gt; Shivajinagara Bus Station" line="37E" type="bus" vClass="bus" completeness="0.90">
+        <route edges="23054647#0 23054647#1 23054647#2 23054647#3 23054647#4 23054647#5 23036323#0 23036323#1 23036323#2 112243683#0 112243683#1 112243683#2 112243683#3 112243683#4 112243683#5 112243683#6 112243683#7 8681855#0 8681855#1 36965408#1 766406225 22562303 -639010021 766406231 375964869 375964865 639010022#1 639010022#2 375964867#1 375964867#2 375964866 -747182858 766406230 30332639 766406229#0 766406229#1 766406229#2 766406229#3 766406229#4 766406229#5 208698150 461556535#0 461556535#1 461556535#2 461556535#3 461556535#4 461556535#5 461556535#6 461556535#7 23029696#1 23029696#2 23029696#3 23029696#4 23029696#6 23029696#7 23029696#8 26283651#0 26283651#1 26283651#2 26283651#3 26283651#4 26283651#5 766406224#0 323813903#1 323813903#2 323813903#3 763290544#0 763290544#1 763290544#2 763290544#3"/>
+        <busStop id="2394630008" name="Lalbagh West Gate, V V Puram"/>
+        <busStop id="2394039396" name="Minarva Circle, Rashtriya Vidyalaya Road"/>
+        <busStop id="6461616259" name="Lalbagh Main Gate"/>
+        <busStop id="7132401123" name="Shantinagara TTMC"/>
+        <busStop id="2396890811" name="KH Road, Double Road"/>
+        <busStop id="3356616804@9740026" name="Richmond Circle"/>
+        <busStop id="1383996009" name="St. Joseph&apos;s College"/>
+        <busStop id="429001259" name="State Bank India Garage"/>
+        <busStop id="2397087882" name="Anil Kumble Circle"/>
+    </ptLine>
+    <ptLine id="9740175" name="34B: Vivekananda Nagara =&gt; Shivajinagara Bus Station" line="34B" type="bus" vClass="bus" completeness="0.90">
+        <route edges="23054647#0 23054647#1 23054647#2 23054647#3 23054647#4 23054647#5 23036323#0 23036323#1 23036323#2 112243683#0 112243683#1 112243683#2 112243683#3 112243683#4 112243683#5 112243683#6 112243683#7 8681855#0 8681855#1 36965408#1 766406225 22562303 553447543 639010022#1 639010022#2 375964867#1 375964867#2 375964866 -747182858 766406230 30332639 766406229#0 766406229#1 766406229#2 766406229#3 766406229#4 766406229#5 208698150 461556535#0 461556535#1 461556535#2 461556535#3 461556535#4 461556535#5 461556535#6 461556535#7 23029696#1 23029696#2 23029696#3 23029696#4 23029696#6 23029696#7 23029696#8 26283651#0 26283651#1 26283651#2 26283651#3 26283651#4 26283651#5 766406224#0 323813903#1 323813903#2 323813903#3 763290544#0 763290544#1 763290544#2 763290544#3"/>
+        <busStop id="2394630008" name="Lalbagh West Gate, V V Puram"/>
+        <busStop id="2394039396" name="Minarva Circle, Rashtriya Vidyalaya Road"/>
+        <busStop id="6461616259" name="Lalbagh Main Gate"/>
+        <busStop id="2396447785" name="Shanthinagara Bus Stop KH Road"/>
+        <busStop id="2396890811" name="KH Road, Double Road"/>
+        <busStop id="3356616804@9740026" name="Richmond Circle"/>
+        <busStop id="1383996009" name="St. Joseph&apos;s College"/>
+        <busStop id="429001259" name="State Bank India Garage"/>
+        <busStop id="2397087882" name="Anil Kumble Circle"/>
+    </ptLine>
+    <ptLine id="9740184" name="210Q: Shivajinagara Bus Station =&gt; Chikkallasandra" line="210Q" type="bus" vClass="bus" completeness="0.75">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+    </ptLine>
+    <ptLine id="9740186" name="210G: Shivajinagara Bus Station =&gt; Vasanthapura" line="210G" type="bus" vClass="bus" completeness="0.80">
+        <route edges="730432812#0 730432812#1 730432812#3 36913434#1 36913434#3 36913434#4 36913434#5 36913434#6 36913434#7 36913434#8 36913434#9 403473952#0 403473952#1 36851759#0 36851759#1 36852351#0 36852351#1 36852351#2 91894181#0 91894181#1 627144178#0 627144178#1"/>
+        <busStop id="4144224291" name="Chinnaswamy Stadium"/>
+        <busStop id="663573137" name="Kasturba Road"/>
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+    <ptLine id="9740187" name="141E: Srinivagilu Ejipura =&gt; Shivajinagara Bus Station" line="141E" type="bus" vClass="bus" completeness="0.75">
+        <route edges="-52736010#17 -52736010#16 -52736010#15 -52736010#14 -52736010#13 -52736010#12 -52736010#11 -52736010#10 -52736010#9 -52736010#8 -52736010#7 -52736010#6 -52736010#4 -52736010#3 -52736010#2 -52736010#1 -52736010#0 462585136#0 -38772795#11 -38772795#10 -38772795#9 -38772795#7 -38772795#6 -38772795#5 -38772795#4 -38772795#2 -38772795#1 -38772795#0 -763175333#5 -763175333#4 -763175333#3 -763175333#2 -763175333#1 -763175333#0 27946101#0 27946101#1 27946101#2 -401993927#2 -401993927#1 -401993927#0 -763293419#1 -763293419#0 -401908497#2 -401908497#1 -401908497#0 401993919#0 401993919#1 401993919#2 763175330#0 763175330#1 763175330#2 763175330#3 763175330#4 763175330#5 239572010#0 239572010#1 763290548#0 763290548#1 763290548#2 763290547#0 763290547#1 763290547#2 763290547#3 763290547#4 763290547#5 763290547#6 763290547#7 763290547#8 124316745#0 124316745#1 124316745#3 124316745#4 124316745#5 124316745#6 124316745#7 124316745#8 763405053 691218619 498553630#0 544759837#0 544759837#1 544759838#1 435249314#1 435249314#2 435249314#3 435249314#4 435249314#5 323813903#1 323813903#2 323813903#3 763290544#0 763290544#1 763290544#2 763290544#3"/>
+        <busStop id="-443252765" name="Fairland Shop"/>
+        <busStop id="-7132452581" name="Shine Bakery"/>
+        <busStop id="-7132452579" name="Vivek Nagar Police Station, Ravi Tent"/>
+        <busStop id="-7132452577" name="Vivekanagara"/>
+        <busStop id="-6017833822" name="Vannarapete"/>
+        <busStop id="6017833823" name="ASC Center"/>
+        <busStop id="-2406087672" name="Austin Town"/>
+        <busStop id="2406088640" name="Philomenas Hospital"/>
+        <busStop id="6584009983" name="St Patrick&apos;s Church"/>
+        <busStop id="3344494904" name="Mayo Hall"/>
+        <busStop id="7132452575" name="MG Road Metro Station"/>
+        <busStop id="2397087882" name="Anil Kumble Circle"/>
+    </ptLine>
+    <ptLine id="9740188" name="13F: Channammanakere Achukattu =&gt; Shivajinagara Bus Station" line="13F" type="bus" vClass="bus" completeness="0.86">
+        <route edges="375964869 375964865 639010022#1 639010022#2 375964867#1 375964867#2 375964866 -747182858 766406230 30332639 766406229#0 766406229#1 766406229#2 766406229#3 766406229#4 766406229#5 208698150 461556535#0 461556535#1 461556535#2 461556535#3 461556535#4 461556535#5 461556535#6 461556535#7 23029696#1 23029696#2 23029696#3 23029696#4 23029696#6 23029696#7 23029696#8 26283651#0 26283651#1 26283651#2 26283651#3 26283651#4 26283651#5 766406224#0 323813903#1 323813903#2 323813903#3 763290544#0 763290544#1 763290544#2 763290544#3"/>
+        <busStop id="7132401123@9740188" name="Shantinagara TTMC"/>
+        <busStop id="2396890811" name="KH Road, Double Road"/>
+        <busStop id="3356616804@9740026" name="Richmond Circle"/>
+        <busStop id="1383996009" name="St. Joseph&apos;s College"/>
+        <busStop id="429001259" name="State Bank India Garage"/>
+        <busStop id="2397087882" name="Anil Kumble Circle"/>
+    </ptLine>
+    <ptLine id="9740189" name="13B: Padmanabha Nagara Rock =&gt; Shivajinagara Bus Station" line="13B" type="bus" vClass="bus" completeness="0.86">
+        <route edges="375964869 375964865 639010022#1 639010022#2 375964867#1 375964867#2 375964866 -747182858 766406230 30332639 766406229#0 766406229#1 766406229#2 766406229#3 766406229#4 766406229#5 208698150 461556535#0 461556535#1 461556535#2 461556535#3 461556535#4 461556535#5 461556535#6 461556535#7 23029696#1 23029696#2 23029696#3 23029696#4 23029696#6 23029696#7 23029696#8 26283651#0 26283651#1 26283651#2 26283651#3 26283651#4 26283651#5 766406224#0 323813903#1 323813903#2 323813903#3 763290544#0 763290544#1 763290544#2 763290544#3"/>
+        <busStop id="7132401123@9740188" name="Shantinagara TTMC"/>
+        <busStop id="2396890811" name="KH Road, Double Road"/>
+        <busStop id="3356616804@9740026" name="Richmond Circle"/>
+        <busStop id="1383996009" name="St. Joseph&apos;s College"/>
+        <busStop id="429001259" name="State Bank India Garage"/>
+        <busStop id="2397087882" name="Anil Kumble Circle"/>
+    </ptLine>
+    <ptLine id="9744381" name="G3A: Electronic City Wipro Gate =&gt; Shivajinagar Bus Station" line="G3A" type="bus" vClass="bus" completeness="0.50">
+        <busStop id="6584009983" name="St Patrick&apos;s Church"/>
+    </ptLine>
+    <ptLine id="9744382" name="201N: Srinagara =&gt; Domlur TTMC Bus Stand" line="201N" type="bus" vClass="bus" completeness="1.00">
+        <busStop id="6584009983" name="St Patrick&apos;s Church"/>
+    </ptLine>
+    <ptLine id="9744383" name="201K: JHBCS Layout =&gt; Domlur TTMC Bus Stand" line="201K" type="bus" vClass="bus" completeness="1.00">
+        <busStop id="6584009983" name="St Patrick&apos;s Church"/>
+    </ptLine>
+    <ptLine id="9744384" name="201: Srinagara =&gt; Domlur TTMC Bus Stand" line="201" type="bus" vClass="bus" completeness="1.00">
+        <busStop id="6584009983" name="St Patrick&apos;s Church"/>
+    </ptLine>
+    <ptLine id="9836740" name="335M: Mahalakshmi Layout =&gt; Kadugodi" line="335M" type="bus" vClass="bus" completeness="0.40">
+        <busStop id="2468903219" name="Mallya Hospital"/>
+        <busStop id="6834406252" name="Richmond Circle"/>
+    </ptLine>
+</ptLines>

@@ -1,0 +1,6 @@
+docker<=4.1.0
+more-itertools<=5.0.0
+pytest
+python-iptables
+setuptools
+urllib3

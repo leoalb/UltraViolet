@@ -1,0 +1,39 @@
+Warning: At actuated tlLogic '249087719', linkIndex 14 has no controlling detector
+Warning: At actuated tlLogic '249087719', linkIndex 15 has no controlling detector
+Warning: At actuated tlLogic '249087719', linkIndex 16 has no controlling detector
+Warning: At actuated tlLogic '249087719', linkIndex 17 has no controlling detector
+Warning: At actuated tlLogic '347295554', linkIndex 6 has no controlling detector
+Warning: At actuated tlLogic '347295554', linkIndex 7 has no controlling detector
+Warning: At actuated tlLogic '347295554', linkIndex 8 has no controlling detector
+Warning: At actuated tlLogic 'cluster_1232686162_246397923_3343265831_3343265840_429303163_6834406270_7697830171_7697830173', linkIndex 14 has no controlling detector
+Warning: At actuated tlLogic 'cluster_1232686162_246397923_3343265831_3343265840_429303163_6834406270_7697830171_7697830173', linkIndex 15 has no controlling detector
+Warning: At actuated tlLogic 'cluster_1232686162_246397923_3343265831_3343265840_429303163_6834406270_7697830171_7697830173', linkIndex 16 has no controlling detector
+Warning: At actuated tlLogic 'cluster_1837445418_1837445420_1837445421_334482516_4318640432_7132452569_7132452570_7702031457', linkIndex 2 has no controlling detector
+Warning: At actuated tlLogic 'cluster_1837445418_1837445420_1837445421_334482516_4318640432_7132452569_7132452570_7702031457', linkIndex 3 has no controlling detector
+Warning: At actuated tlLogic 'cluster_1837445418_1837445420_1837445421_334482516_4318640432_7132452569_7132452570_7702031457', linkIndex 4 has no controlling detector
+Warning: At actuated tlLogic 'joinedS_6', linkIndex 8 has no controlling detector
+Warning: At actuated tlLogic 'joinedS_6', linkIndex 15 has no controlling detector
+Warning: busStop '3755675146' on lane '498554151_0' is too short for vehicle '1_bus_286A:0'.
+Warning: busStop '-1617752128' on lane '-23018325#12_0' is too short for vehicle '2_bus_140:0'.
+Warning: busStop '7131511277' on lane '763175322_0' is too short for vehicle '2_bus_140:0'.
+Warning: busStop '3943325827' on lane '52032727_0' is too short for vehicle '3_bus_333:0'.
+Warning: busStop '7140560440' on lane '23018325#11_0' is too short for vehicle '5_bus_146E:0'.
+Warning: busStop '7141213460' on lane '239441161#1_0' is too short for vehicle '9_bus_G4:0'.
+Warning: busStop '3755675146@10603778' on lane '498554152#2_0' is too short for vehicle '11_bus_290D:0'.
+Warning: busStop '431524247' on lane '549187829_0' is too short for vehicle '20_subway_Purple:0'.
+Warning: busStop '428847118' on lane '549187830_0' is too short for vehicle '20_subway_Purple:0'.
+Warning: busStop '568344479' on lane '44829220_0' is too short for vehicle '20_subway_Purple:0'.
+Warning: busStop '5760198472' on lane '607901289_0' is too short for vehicle '21_subway_Green:0'.
+Warning: busStop '2398074914' on lane '31235676_0' is too short for vehicle '22_bus_276:0'.
+Warning: busStop '597363270' on lane '224618934#4_0' is too short for vehicle '25_bus_KBS3A:0'.
+Warning: busStop '1437223296' on lane '549256479_0' is too short for vehicle '34_subway_Green:1'.
+Warning: busStop '6017833825' on lane '763175332#2_0' is too short for vehicle '43_bus_G2:1'.
+Warning: busStop '6019408109' on lane '23078462#1_0' is too short for vehicle '44_bus_342F:0'.
+Warning: busStop '7132401123' on lane '766406231_0' is too short for vehicle '45_bus_342F:1'.
+Warning: busStop '6460998320' on lane '150357930#0_0' is too short for vehicle '66_bus_52:0'.
+Warning: busStop '4846787925' on lane '325833350#1_0' is too short for vehicle '99_bus_144E:0'.
+Warning: busStop '2406538301' on lane '763293417#1_0' is too short for vehicle '99_bus_144E:0'.
+Warning: busStop '-2406537990' on lane '-28126587#1_0' is too short for vehicle '99_bus_144E:0'.
+Warning: busStop '-443252765' on lane '-52736010#11_0' is too short for vehicle '114_bus_141E:0'.
+Warning: busStop '-7132452579' on lane '-52736010#1_0' is too short for vehicle '114_bus_141E:0'.
+Warning: busStop '-7132452577' on lane '-38772795#0_0' is too short for vehicle '114_bus_141E:0'.

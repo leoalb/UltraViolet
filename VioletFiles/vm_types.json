@@ -1,0 +1,14 @@
+{
+	"m4.10xl": {
+		"core_count" : "40",							// used for deciding CPU's
+		"coremark": "340000",							// total coremark for all cores together
+		"whetstone": "340000",							// total whetstone for all cores together
+		"memory_mb" : "160000",							// available memory for containers
+		"disk_mb" : "50000",							// available disk space for containers
+		"out_bw_mbps" : "10000",						// available NW bandwidth for containers out of the VM
+		"out_latency_ms" : "0.4",						// smallest NW latency for containers out of the VM
+		"local_bw_mbps" : "27000",						// available NW bandwidth for containers within the same VM
+		"local_latency_ms" : "0.06",					// smallest NW latency for containers within the same VM
+		"shared_mount" : "/tmp/scratch/containers",		// path on VM that is mounted on container
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"device_ssh_user" : "violet",
+	"device_ssh_password" : "123456",
+	"sanity_check" : {							// which sanity check scripts should we run? Logs from the run will be copied to the mount folder in the container.
+		"network_bw" : "0.05",					// on what fraction of device pairs in a network should we run iperf?
+		"network_latency" : "0.1",				// on what fraction of device pairs in a network should we run fping?
+		"network_visibility_ratio" : "0.01",	// on what fraction of device pairs across all networks should we run traceroute?
+		"cpu_coremark_ratio" : "1.0",			// on what fraction of devices should we run coremark benchmark? threads used in number of cores in device.
+		"cpu_whetstone_ratio" : "0",			// on what fraction of devices should we run whetstone benchmark?
+		"container_top_period_secs" : "30"		// should we run top about containers as a periodic background thread on host VM?
+	},
+	"partitioning_goals" : {
+		"coremark_limit" : "true",				// if true, use vertex size limit in metis
+		"whetstone_limit" : "false",
+		"bandwidth_limit" : "true",
+		"latency_limit" : "true",
+		"memory_limit" : "false",
+		"disk_limit" : "false"
+	},
+	"partitioning_sanity_check" : {
+		"coremark_limit" : "true",				// if true, do not deploy if coremark on a VM exceeds total device coremark. if false, give warning and proceed.
+		"whetstone_limit" : "false",
+		"memory_limit" : "true",
+		"disk_limit" : "true"
+		"bandwidth_limit" : "false",			// specific to intra or inter VM deployment of containers
+		"latency_limit" : "false",				// specific to intra or inter VM deployment of containers
+	},
+	"log_path" : "/tmp/violet/logs",			// path on host VM wher log files are written
+	"retain_disk_on_kill" : "false",			// do we delete the conteiner folders on host VM on exit
+	"vm_top_period_secs" : "30"					// should we run top of the VM as a periodic background thread on host VM?
+}

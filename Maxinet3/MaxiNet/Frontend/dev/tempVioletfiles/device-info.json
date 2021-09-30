@@ -1,0 +1,206 @@
+{
+	"CloudVM-small" : [
+		{
+			"name":"C",
+			"ssh" : {
+				"user" 	: "root",
+				"hostname"	: "C",
+				"paswd"	: "qwerty"
+			},
+			"ip-address": "",
+			"default-gateway": "",
+			"exposed-ports": [ 
+				{
+					"host-machine-port" : "80",
+					"device-port" : "8080"
+				},
+				{
+					"host-machine-port" : "22",
+					"device-port" : "8081"
+				}
+			]
+		}
+	],
+
+	"Fog" : [
+		{
+			"name":"F1",
+			"ssh" : {
+				"user" 	: "root",
+				"hostname"	: "F1",
+				"paswd"	: "qwerty"
+			},
+			"ip-address": "",
+			"default-gateway": "",
+			"exposed ports": [ 
+				{
+					"host-machine-port" : "80",
+					"device-port" : "8080"
+				},
+				{
+					"host-machine-port" : "22",
+					"device-port" : "8081"
+				}
+			],
+			"sensors" : [
+				{	
+					"class-of-sensors"	: "temperature",
+					"count"				: "100",
+					"start_port"		: "6535",
+					"end_port"			: "6635"
+				}
+			]
+		},
+		{
+			"name":"F2",
+			"ssh" : {
+				"user" 	: "root",
+				"hostname"	: "F2",
+				"paswd"	: "qwerty"
+			},
+			"ip-address": "",
+			"default-gateway": "",
+			"exposed ports": [ 
+				{
+					"host-machine-port" : "80",
+					"device-port" : "8080"
+				},
+				{
+					"host-machine-port" : "22",
+					"device-port" : "8081"
+				}
+			],
+			"sensors" : [
+				{	
+					"class-of-sensors"	: "accelerometer",
+					"count"				: "100",
+					"start_port"		: "6535",
+					"end_port"			: "6635"
+				}
+			]
+		}
+
+	],
+
+	"Edge" : [
+		{
+			"name":"E1.1",
+			"ssh" : {
+				"user" 	: "root",
+				"hostname"	: "E1.1",
+				"paswd"	: "qwerty"
+			},
+			"ip-address": "",
+			"default-gateway": "",
+			"exposed ports": [ 
+				{
+					"host-machine-port" : "80",
+					"device-port" : "8080"
+				},
+				{
+					"host-machine-port" : "22",
+					"device-port" : "8081"
+				}
+			],
+			"sensors" : [
+				{	
+					"class-of-sensors"	: "gyroscope",
+					"count"				: "200",
+					"start_port"		: "6535",
+					"end_port"			: "6835"
+				},
+				{	
+					"class-of-sensors"	: "accelerometer",
+					"count"				: "100",
+					"start_port"		: "6835",
+					"end_port"			: "6935"
+				}
+			]
+		},
+		{
+			"name":"E1.2",
+			"ssh" : {
+				"user" 	: "root",
+				"hostname"	: "E1.2",
+				"paswd"	: "qwerty"
+			},
+			"ip-address": "",
+			"default-gateway": "",
+			"exposed ports": [ 
+				{
+					"host-machine-port" : "80",
+					"device-port" : "8080"
+				},
+				{
+					"host-machine-port" : "22",
+					"device-port" : "8081"
+				}
+			],
+			"sensors" : [
+				{	
+					"class-of-sensors"	: "accelerometer",
+					"count"				: "200",
+					"start_port"		: "6535",
+					"end_port"			: "6735"
+				}
+			]
+		},
+		{
+			"name":"E2.1",
+			"ssh" : {
+				"user" 	: "root",
+				"hostname"	: "E2.1",
+				"paswd"	: "qwerty"
+			},
+			"ip-address": "",
+			"default-gateway": "",
+			"exposed ports": [ 
+				{
+					"host-machine-port" : "80",
+					"device-port" : "8080"
+				},
+				{
+					"host-machine-port" : "22",
+					"device-port" : "8081"
+				}
+			],
+			"sensors" : [
+				{	
+					"class-of-sensors"	: "temperature",
+					"count"				: "200",
+					"start_port"		: "6535",
+					"end_port"			: "6735"
+				}
+			]
+		},
+		{
+			"name":"E2.2",
+			"ssh" : {
+				"user" 	: "root",
+				"hostname"	: "E2.2",
+				"paswd"	: "qwerty"
+			},
+			"ip-address": "",
+			"default-gateway": "",
+			"exposed ports": [ 
+				{
+					"host-machine-port" : "80",
+					"device-port" : "8080"
+				},
+				{
+					"host-machine-port" : "22",
+					"device-port" : "8081"
+				}
+			],
+			"sensors" : [
+				{	
+					"class-of-sensors"	: "gyroscope",
+					"count"				: "200",
+					"start_port"		: "6535",
+					"end_port"			: "6735"
+				}
+			]
+		},
+
+	]
+}

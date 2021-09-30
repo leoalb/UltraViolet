@@ -1,0 +1,24 @@
+{
+	"Pi2B": {
+		"core_count" : "4",								// used for coremark/whetstone concurrent threads
+		"coremark": "8910",
+		"whetstone": "8910",
+		"memory_mb" : "1024",
+		"disk_mb" : "2048",
+		"nic_out_bw_mbps" : "100",						// deployed device will use min of this mbps or the bridge mbps
+		"docker_image" : "/dreamlab/violet:latest",		// can be used defined. must extend from violet base image.
+		"host_mount" : "scratch",						// mount directory in host VM exposed to container
+		"reliability" : {
+			"mttf_sec": "300",							// time between device shutdown
+			"mttr_sec": "5",							// time for shutdown device to restart
+			"cpu_var_max" : "0.1",						// max ratio by which the CPU can slow down
+			"cpu_var_period_sec" : "600",				// period between CPU speed change
+			"out_bw_var_max" : "0.1",					// max ratio by which the BW can slow down (from min of device NIC or bridge BW)
+			"out_bw_var_period_secs" : "1200",			// period between BW speed change
+			"out_lat_var_max" : "0.05",					// max ratio by which the latency can slow down (from bridge BW)
+			"out_lat_var_period_secs" : "1200",			// period between latency speed change
+			"out_packet_loss_ratio" : "0.00001",		// what fraction of packets are dropped
+			"out_packet_corruption_ratio" : "0.0001",	// what fraction of packets are corrupted
+		}
+	}
+}

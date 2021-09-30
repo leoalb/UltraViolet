@@ -1,0 +1,7 @@
+{
+	"m4.10xl": {
+		"core_count" : "40",							
+		"coremark": "340000",							
+		"memory_mb" : "160000"
+	}
+}

@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu Mar  4 13:20:40 2021 by Eclipse SUMO netconvert Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="/usr/share/sumo/data/typemap/osmNetconvert.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+        <lefthand value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+        <railway.topology.repair.stop-turn value="true"/>
+    </railway>
+
+    <report>
+        <verbose value="true"/>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="-1617752128" name="Nanjappa Circle" lane="-23018325#12_0" startPos="0.00" endPos="10.58" friendlyPos="true" lines="140"/>
+    <busStop id="-2402196851" name="Vinayaka Talkies KR Market" lane="-525778225#0_0" startPos="28.71" endPos="43.71" friendlyPos="true" lines="55B"/>
+    <busStop id="-2406087672" name="Austin Town" lane="-401908497#2_0" startPos="22.62" endPos="37.62" friendlyPos="true" lines="140 144K 141E"/>
+    <busStop id="-2406089988" name="Akkithimmanahalli" lane="-23018325#2_0" startPos="111.38" endPos="126.38" friendlyPos="true" lines="140"/>
+    <busStop id="-2406115675" name="Vivekanagara" lane="-763175334#5_0" startPos="0.00" endPos="7.50" friendlyPos="true" lines="140"/>
+    <busStop id="-2406537990" name="Neelasandra Rose Garden" lane="-28126587#1_0" startPos="48.16" endPos="63.15" friendlyPos="true" lines="144E"/>
+    <busStop id="-443252765" name="Fairland Shop" lane="-52736010#11_0" startPos="25.75" endPos="39.67" friendlyPos="true" lines="141E"/>
+    <busStop id="-5760197788" name="Krantivira Sangolli Rayanna Railway Station" lane="-607901258_0" startPos="114.59" endPos="214.59" friendlyPos="true">
+        <access lane="457464671#0_0" pos="121.97" length="2.09" friendlyPos="1"/>
+        <access lane="457464671#1_0" pos="17.63" length="18.50" friendlyPos="1"/>
+        <access lane="457467384_0" pos="12.61" length="71.63" friendlyPos="1"/>
+        <access lane="457467385_0" pos="13.39" length="53.62" friendlyPos="1"/>
+        <access lane="457467387_0" pos="12.82" length="38.60" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760197792" name="Indiranagar" lane="-607901263_0" startPos="1292.22" endPos="1392.22" friendlyPos="true">
+        <access lane="126774193#12_0" pos="138.90" length="102.02" friendlyPos="1"/>
+        <access lane="464465186#0_0" pos="0.00" length="103.59" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760197793" name="Halasuru" lane="-607901263_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-492441116#0_0" pos="66.20" length="22.32" friendlyPos="1"/>
+        <access lane="464465205#4_0" pos="4.49" length="17.18" friendlyPos="1"/>
+        <access lane="492441116#0_0" pos="0.00" length="18.23" friendlyPos="1"/>
+        <access lane="638541497#16_0" pos="104.29" length="4.15" friendlyPos="1"/>
+        <access lane="638541497#17_0" pos="0.00" length="28.40" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760197794" name="Trinity" lane="-607901264_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-760125407_0" pos="88.55" length="7.93" friendlyPos="1"/>
+        <access lane="263812623#7_0" pos="1.22" length="7.71" friendlyPos="1"/>
+        <access lane="263812623#8_0" pos="0.00" length="7.22" friendlyPos="1"/>
+        <access lane="434696514_0" pos="3.17" length="14.80" friendlyPos="1"/>
+        <access lane="760125407_0" pos="0.00" length="7.81" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760197795" name="Mahatma Gandhi Road" lane="-607901265_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="327534070#5_0" pos="6.69" length="39.90" friendlyPos="1"/>
+        <access lane="327534071_0" pos="0.00" length="12.08" friendlyPos="1"/>
+        <access lane="396903045#1_0" pos="533.13" length="2.31" friendlyPos="1"/>
+        <access lane="435249314#1_0" pos="109.74" length="32.27" friendlyPos="1"/>
+        <access lane="4354953#7_0" pos="537.75" length="9.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760197798" name="Cubbon Park" lane="-607901268_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="107215088#2_0" pos="47.90" length="28.20" friendlyPos="1"/>
+        <access lane="362900184_0" pos="0.00" length="33.68" friendlyPos="1"/>
+        <access lane="362900185#0_0" pos="0.00" length="13.13" friendlyPos="1"/>
+        <access lane="508711047_0" pos="0.00" length="11.32" friendlyPos="1"/>
+        <access lane="508711049#0_0" pos="0.00" length="32.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760197799" name="Dr. B R Ambedkar Station, Vidhana Soudha" lane="-607901269_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-38542545#1_0" pos="39.76" length="80.93" friendlyPos="1"/>
+        <access lane="362206700#2_0" pos="142.05" length="13.04" friendlyPos="1"/>
+        <access lane="362206701#5_0" pos="135.36" length="9.99" friendlyPos="1"/>
+        <access lane="372150308#0_0" pos="63.65" length="97.56" friendlyPos="1"/>
+        <access lane="38542545#1_0" pos="44.36" length="76.13" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760197800" name="Nadaprabhu Kempegowda Station, Majestic (Purple Line)" lane="-607901259_0" startPos="695.49" endPos="795.49" friendlyPos="true">
+        <access lane="-510973203_0" pos="34.63" length="52.92" friendlyPos="1"/>
+        <access lane="373570000_0" pos="123.10" length="163.39" friendlyPos="1"/>
+        <access lane="510973203_0" pos="171.84" length="57.72" friendlyPos="1"/>
+        <access lane="53857348_0" pos="66.24" length="169.40" friendlyPos="1"/>
+        <access lane="630675225_0" pos="0.00" length="96.17" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760197802" name="Sir M Vishweshwariah - Central College" lane="-607901270_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-133867982#1_0" pos="100.20" length="5.36" friendlyPos="1"/>
+        <access lane="133867982#0_0" pos="263.41" length="72.03" friendlyPos="1"/>
+        <access lane="133867982#1_0" pos="43.02" length="0.56" friendlyPos="1"/>
+        <access lane="52244620_0" pos="0.00" length="68.28" friendlyPos="1"/>
+        <access lane="52245876_0" pos="5.08" length="68.33" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760198468" name="Nadaprabhu Kempegowda Station, Majestic (Green Line)" lane="-607901285_0" startPos="885.25" endPos="985.25" friendlyPos="true">
+        <access lane="-510973203_0" pos="34.40" length="104.98" friendlyPos="1"/>
+        <access lane="373570000_0" pos="123.10" length="150.77" friendlyPos="1"/>
+        <access lane="510973203_0" pos="171.84" length="109.81" friendlyPos="1"/>
+        <access lane="544757155#1_0" pos="63.84" length="152.82" friendlyPos="1"/>
+        <access lane="630675225_0" pos="0.00" length="115.06" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760198469" name="Chikkapete" lane="-607901285_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-38540558#8_0" pos="75.37" length="66.93" friendlyPos="1"/>
+        <access lane="-744544603_0" pos="157.63" length="37.88" friendlyPos="1"/>
+        <access lane="38540558#7_0" pos="13.58" length="80.56" friendlyPos="1"/>
+        <access lane="38540558#8_0" pos="19.39" length="62.13" friendlyPos="1"/>
+        <access lane="744544603_0" pos="35.67" length="42.68" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760198472" name="Lalbagh" lane="-607901289_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-149105514#1_0" pos="45.13" length="71.44" friendlyPos="1"/>
+        <access lane="149105514#1_0" pos="78.30" length="66.64" friendlyPos="1"/>
+        <access lane="23053764#4_0" pos="70.06" length="22.26" friendlyPos="1"/>
+        <access lane="490723309#0_0" pos="1077.64" length="12.22" friendlyPos="1"/>
+        <access lane="53583678_0" pos="301.04" length="52.82" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760198473" name="Krishna Rajendra Market" lane="-607901286_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-373575002#2_0" pos="0.00" length="40.62" friendlyPos="1"/>
+        <access lane="-727353146_0" pos="20.62" length="4.99" friendlyPos="1"/>
+        <access lane="373575000_0" pos="0.00" length="38.64" friendlyPos="1"/>
+        <access lane="373575002#2_0" pos="75.55" length="35.82" friendlyPos="1"/>
+        <access lane="727353146_0" pos="24.58" length="9.79" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5760198474" name="National College" lane="-607901289_0" startPos="906.54" endPos="1006.54" friendlyPos="true">
+        <access lane="-112380260#1_0" pos="0.00" length="55.78" friendlyPos="1"/>
+        <access lane="112380260#1_0" pos="19.42" length="51.68" friendlyPos="1"/>
+        <access lane="376490454#3_0" pos="228.06" length="10.49" friendlyPos="1"/>
+        <access lane="376490454#4_0" pos="0.00" length="57.26" friendlyPos="1"/>
+        <access lane="461209415#1_0" pos="23.54" length="19.03" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6017833822" name="Vannarapete" lane="-763175333#1_0" startPos="18.44" endPos="33.44" friendlyPos="true" lines="140 G2 141E"/>
+    <busStop id="-7105069823" name="Chamarajapet" lane="-23076215#5_0" startPos="28.97" endPos="43.97" friendlyPos="true" lines="52"/>
+    <busStop id="-7105069825" name="Makkala Koota" lane="-162697329#4_0" startPos="51.07" endPos="66.07" friendlyPos="true" lines="52"/>
+    <busStop id="-7132452577" name="Vivekanagara" lane="-38772795#0_0" startPos="3.72" endPos="15.81" friendlyPos="true" lines="141E"/>
+    <busStop id="-7132452579" name="Vivek Nagar Police Station, Ravi Tent" lane="-52736010#1_0" startPos="33.89" endPos="48.38" friendlyPos="true" lines="141E"/>
+    <busStop id="-7132452581" name="Shine Bakery" lane="-52736010#6_0" startPos="0.00" endPos="8.68" friendlyPos="true" lines="141E"/>
+    <busStop id="-7132495620" name="Neelasandra Bus Stand" lane="-763293417#1_0" startPos="0.00" endPos="12.85" friendlyPos="true" lines="144K"/>
+    <busStop id="-7140581379" name="KR Circle" lane="-133867982#0_0" startPos="237.86" endPos="252.86" friendlyPos="true" lines="293C"/>
+    <busStop id="-7141213458" name="Indian Christian Cemetry" lane="-28842920#4_0" startPos="28.65" endPos="43.65" friendlyPos="true" lines="G4"/>
+    <busStop id="1067841650" name="Brigade Road" lane="23029716_0" startPos="0.00" endPos="7.75" friendlyPos="true" lines="G4"/>
+    <busStop id="1087823607" name="Sir M Vishweshwariah - Central College" lane="549187836_0" startPos="844.55" endPos="933.20" friendlyPos="true" lines="Purple">
+        <access lane="-133867982#0_0" pos="0.00" length="73.07" friendlyPos="1"/>
+        <access lane="-133867982#1_0" pos="100.25" length="12.81" friendlyPos="1"/>
+        <access lane="133867982#0_0" pos="263.41" length="72.40" friendlyPos="1"/>
+        <access lane="133867982#1_0" pos="42.97" length="8.01" friendlyPos="1"/>
+        <access lane="52244620_0" pos="4.83" length="67.77" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1156224150" name="Pothalappa Garden" lane="162583705#2_0" startPos="0.00" endPos="11.70" friendlyPos="true"/>
+    <busStop id="1323690429" name="Makkala Koota" lane="759364436_0" startPos="29.52" endPos="44.52" friendlyPos="true" lines="1 TR12"/>
+    <busStop id="1383996009" name="St. Joseph&apos;s College" lane="461556535#6_0" startPos="142.59" endPos="157.59" friendlyPos="true" lines="333 K4 TR7 MBS14 37E 34B 13F 13B"/>
+    <busStop id="1437223296" name="Lalbagh" lane="549256479_0" startPos="906.69" endPos="817.42" friendlyPos="true" lines="Green">
+        <access lane="-149105514#1_0" pos="45.45" length="78.31" friendlyPos="1"/>
+        <access lane="149105514#1_0" pos="77.98" length="73.51" friendlyPos="1"/>
+        <access lane="23053764#4_0" pos="70.10" length="15.37" friendlyPos="1"/>
+        <access lane="490723309#0_0" pos="1077.62" length="19.11" friendlyPos="1"/>
+        <access lane="53583678_0" pos="301.58" length="45.98" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1442068021" name="Lalbagh Siddapura (Lalbagh East Gate)" lane="130989093#3_0" startPos="296.68" endPos="321.68" friendlyPos="true"/>
+    <busStop id="1454651909" name="Command Hospital" lane="464465170#2_0" startPos="174.65" endPos="199.65" friendlyPos="true"/>
+    <busStop id="1488405363" name="Indira Nagar Double Road" lane="126774193#12_0" startPos="9.57" endPos="24.57" friendlyPos="true"/>
+    <busStop id="1521036512" name="Magadi Road 5th Cross" lane="170931909#0_0" startPos="907.48" endPos="922.48" friendlyPos="true"/>
+    <busStop id="1521343675" name="Magadi Road 10th Cross" lane="170931909#0_0" startPos="496.69" endPos="511.69" friendlyPos="true"/>
+    <busStop id="1524381509" name="National College" lane="549256479_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="Green">
+        <access lane="-112380260#1_0" pos="0.00" length="52.61" friendlyPos="1"/>
+        <access lane="112380260#1_0" pos="19.42" length="48.25" friendlyPos="1"/>
+        <access lane="172937188#4_0" pos="248.43" length="58.02" friendlyPos="1"/>
+        <access lane="376490454#3_0" pos="228.07" length="17.38" friendlyPos="1"/>
+        <access lane="461209415#1_0" pos="23.45" length="12.15" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1524381523" name="Krishna Rajendra Market" lane="343203596_0" startPos="574.11" endPos="668.03" friendlyPos="true" lines="Green">
+        <access lane="-727353146_0" pos="25.08" length="6.58" friendlyPos="1"/>
+        <access lane="373575002#2_0" pos="75.55" length="42.56" friendlyPos="1"/>
+        <access lane="525778223#0_0" pos="96.40" length="38.62" friendlyPos="1"/>
+        <access lane="525778223#1_0" pos="1.91" length="34.69" friendlyPos="1"/>
+        <access lane="727353146_0" pos="20.12" length="11.38" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1548300484" name="Chikkapete" lane="343203596_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="Green">
+        <access lane="-38540558#8_0" pos="77.53" length="73.01" friendlyPos="1"/>
+        <access lane="-744544603_0" pos="153.57" length="34.68" friendlyPos="1"/>
+        <access lane="38540558#7_0" pos="13.58" length="83.51" friendlyPos="1"/>
+        <access lane="38540558#8_0" pos="17.22" length="68.21" friendlyPos="1"/>
+        <access lane="744544603_0" pos="39.74" length="39.48" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1557291133" name="Shoolay Circle" lane="764329019#2_0" startPos="70.84" endPos="95.84" friendlyPos="true"/>
+    <busStop id="1560067666" name="Krantivira Sangolli Rayanna Railway Station" lane="133867981_0" startPos="746.18" endPos="844.48" friendlyPos="true" lines="Purple">
+        <access lane="457464671#0_0" pos="121.88" length="5.33" friendlyPos="1"/>
+        <access lane="457464671#1_0" pos="17.70" length="11.07" friendlyPos="1"/>
+        <access lane="457467384_0" pos="12.61" length="66.78" friendlyPos="1"/>
+        <access lane="457467385_0" pos="13.39" length="49.85" friendlyPos="1"/>
+        <access lane="457467387_0" pos="12.82" length="35.81" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1568922532" name="Town Hall" lane="688824223#0_0" startPos="20.32" endPos="35.32" friendlyPos="true" lines="140 52 341C"/>
+    <busStop id="1597612576" name="Lido" lane="328349209#1_0" startPos="24.99" endPos="49.99" friendlyPos="true"/>
+    <busStop id="1597612577" lane="461556542#1_0" startPos="9.63" endPos="34.63" friendlyPos="true"/>
+    <busStop id="1617749837" name="Johnson Market" lane="764329020#0_0" startPos="587.62" endPos="602.62" friendlyPos="true" lines="146E"/>
+    <busStop id="1632815594" name="Krishnarajendra Market" lane="454013128_0" startPos="0.00" endPos="13.54" friendlyPos="true" lines="1"/>
+    <busStop id="1635922811" name="Trinity Circle" lane="638541497#1_0" startPos="24.16" endPos="39.16" friendlyPos="true" lines="K4"/>
+    <busStop id="1635922819" name="Trinity Circle" lane="638541497#4_0" startPos="0.00" endPos="16.83" friendlyPos="true"/>
+    <busStop id="1650296781" name="Subbaiah Circle" lane="328836685#5_0" startPos="11.65" endPos="26.65" friendlyPos="true" lines="146E 342F G6 V342F"/>
+    <busStop id="1698055294" name="Halasuru" lane="638541497#20_0" startPos="10.06" endPos="25.06" friendlyPos="true" lines="K4"/>
+    <busStop id="1739362330" name="Town Hall" lane="310910082_0" startPos="22.97" endPos="37.97" friendlyPos="true" lines="293E 286A 111 293C 292 K4 G6"/>
+    <busStop id="1837395715" name="Wilson Garden 14th cross" lane="323458349#2_0" startPos="31.63" endPos="56.63" friendlyPos="true"/>
+    <busStop id="1837445442" name="MG Road Parade Ground" lane="4354953#7_0" startPos="452.58" endPos="477.58" friendlyPos="true"/>
+    <busStop id="1837716576" name="National College" lane="461209416_0" startPos="0.19" endPos="25.19" friendlyPos="true"/>
+    <busStop id="1837716632" name="Makkala Koota" lane="172937188#2_0" startPos="20.36" endPos="45.36" friendlyPos="true"/>
+    <busStop id="1837783485" name="Electric B Station" lane="172947338#1_0" startPos="19.30" endPos="34.30" friendlyPos="true"/>
+    <busStop id="2007574677" name="KR Market" lane="190144809#0_0" startPos="0.00" endPos="7.50" friendlyPos="true" lines="55B 1"/>
+    <busStop id="2268440721" name="Dickenson Road" lane="72099282_0" startPos="60.68" endPos="75.68" friendlyPos="true" lines="169"/>
+    <busStop id="2393689534" name="S J Polytechnic College" lane="150785556#3_0" startPos="3.26" endPos="28.26" friendlyPos="true"/>
+    <busStop id="2393689586" name="S J Polytechnic College" lane="764332431_0" startPos="181.11" endPos="206.11" friendlyPos="true"/>
+    <busStop id="2393695722" name="Corporation Circle" lane="148016866#1_0" startPos="8.71" endPos="23.71" friendlyPos="true" lines="146E KBS3A 52"/>
+    <busStop id="2393696810" name="Town Hall" lane="36897679_0" startPos="11.96" endPos="36.96" friendlyPos="true"/>
+    <busStop id="2393859187" name="Chamarajapet" lane="162697329#0_0" startPos="45.37" endPos="60.37" friendlyPos="true" lines="1 TR12"/>
+    <busStop id="2393966201" name="Binny Mill , Goodshed Road Gate" lane="36897689#7_0" startPos="118.20" endPos="133.20" friendlyPos="true" lines="1"/>
+    <busStop id="2393966538" name="Cottonpet Hospital Super Talkies" lane="36897685#0_0" startPos="9.47" endPos="24.47" friendlyPos="true" lines="226J 218A 218 220D 201M 234E 227C 227A 227N"/>
+    <busStop id="2393969380" name="Vinayaka Talkies" lane="36897685#7_0" startPos="7.58" endPos="22.58" friendlyPos="true"/>
+    <busStop id="2393971138" name="Chamarajapete,In Front Of Manapuram Gold" lane="555368897#0_0" startPos="11.69" endPos="36.69" friendlyPos="true"/>
+    <busStop id="2393971549" name="Bengaluru High School" lane="555368896#2_0" startPos="31.07" endPos="46.07" friendlyPos="true" lines="1 TR12"/>
+    <busStop id="2393971633" name="Ramakrishna Ashrama" lane="555368896#0_0" startPos="40.21" endPos="55.21" friendlyPos="true" lines="1 TR12"/>
+    <busStop id="2393971760" name="Gandhi Bazar , North Road, Basavanagudi" lane="40629060#3_0" startPos="11.39" endPos="36.39" friendlyPos="true"/>
+    <busStop id="2394020398" name="Rv Teachers College,Basavanagudi" lane="23053764#4_0" startPos="341.06" endPos="366.06" friendlyPos="true"/>
+    <busStop id="2394026707" name="Vijaya College, Basavanagudi" lane="23053764#5_0" startPos="405.56" endPos="430.56" friendlyPos="true"/>
+    <busStop id="2394039396" name="Minarva Circle, Rashtriya Vidyalaya Road" lane="23054647#4_0" startPos="31.96" endPos="46.96" friendlyPos="true" lines="TR7 37E 34B"/>
+    <busStop id="2394042060" name="Corporation" lane="23076927#1_0" startPos="0.00" endPos="14.81" friendlyPos="true" lines="286A 111 293C KBS3A 342F V342F"/>
+    <busStop id="2394043250" name="Cauvery Bhavana" lane="38684971#0_0" startPos="69.81" endPos="84.81" friendlyPos="true" lines="111"/>
+    <busStop id="2394101410" name="Poornima Talkies" lane="152582846#0_0" startPos="0.00" endPos="21.88" friendlyPos="true"/>
+    <busStop id="2394630008" name="Lalbagh West Gate, V V Puram" lane="23054647#0_0" startPos="0.00" endPos="7.50" friendlyPos="true" lines="TR7 37E 34B"/>
+    <busStop id="2396240347" name="Ramakrishna Ashrama" lane="142487542_0" startPos="0.00" endPos="24.89" friendlyPos="true"/>
+    <busStop id="2396303951" name="Hanumantha Nagara Syndicate Bank" lane="491480310#0_0" startPos="22.45" endPos="37.45" friendlyPos="true" lines="TR12"/>
+    <busStop id="2396418664" name="Elgin Floor Mill,Langford Town" lane="239441160#4_0" startPos="25.88" endPos="50.88" friendlyPos="true"/>
+    <busStop id="2396420234" name="St Patrick&apos;s Church" lane="763290548#2_0" startPos="25.54" endPos="40.54" friendlyPos="true"/>
+    <busStop id="2396422787" name="Halasur Police Station" lane="638541497#11_0" startPos="45.07" endPos="66.91" friendlyPos="true"/>
+    <busStop id="2396424444" name="Halasur" lane="126774193#1_0" startPos="62.40" endPos="87.40" friendlyPos="true"/>
+    <busStop id="2396425548" name="Lakshmipura Ulsoor" lane="126774193#8_0" startPos="43.48" endPos="58.48" friendlyPos="true" lines="K4"/>
+    <busStop id="2396447784" name="Shanthinagara Bus Stop KH Road" lane="638928394_0" startPos="90.05" endPos="105.05" friendlyPos="true" lines="190"/>
+    <busStop id="2396447785" name="Shanthinagara Bus Stop KH Road" lane="553447543_0" startPos="114.77" endPos="129.77" friendlyPos="true" lines="TR7 MBS14 34B"/>
+    <busStop id="2396890413" name="Lalbagh Main Gate" lane="23078145#0_0" startPos="550.74" endPos="565.74" friendlyPos="true" lines="190"/>
+    <busStop id="2396890811" name="KH Road, Double Road" lane="375964867#2_0" startPos="16.57" endPos="31.57" friendlyPos="true" lines="KBS3A 342F V342F TR7 MBS14 37E 34B 13F 13B"/>
+    <busStop id="2396896338" name="Police Housing Corporation" lane="36853688#2_0" startPos="117.35" endPos="142.35" friendlyPos="true"/>
+    <busStop id="2396896553" name="Lifestyle" lane="133632534#6_0" startPos="42.34" endPos="57.34" friendlyPos="true" lines="190 144E 144"/>
+    <busStop id="2397087882" name="Anil Kumble Circle" lane="323813903#2_0" startPos="91.46" endPos="106.46" friendlyPos="true" lines="MBS14 144K 37E 34B 141E 13F 13B"/>
+    <busStop id="2398074914" name="Kempegowda Bus Station" lane="31235676_0" startPos="115.14" endPos="120.32" friendlyPos="true" lines="276 78A"/>
+    <busStop id="2398074914@5598563" name="Kempegowda Bus Station" lane="580772059_0" startPos="0.00" endPos="8.77" friendlyPos="true" lines="90E"/>
+    <busStop id="2398074914@6856311" name="Kempegowda Bus Station" lane="372018370#0_0" startPos="447.57" endPos="462.57" friendlyPos="true" lines="252F"/>
+    <busStop id="2398094147" name="Khodays Circle" lane="372018380_0" startPos="14.22" endPos="29.22" friendlyPos="true" lines="52"/>
+    <busStop id="2398101219" name="Basappa Circle" lane="38042634#4_0" startPos="5.72" endPos="30.72" friendlyPos="true"/>
+    <busStop id="2401259157" name="Manipal Center" lane="542070643#1_0" startPos="439.00" endPos="464.00" friendlyPos="true"/>
+    <busStop id="2401263650" name="Command Hospital" lane="638531682#2_0" startPos="228.08" endPos="243.08" friendlyPos="true" lines="333"/>
+    <busStop id="2401307621" name="Manipal Center" lane="464465211#2_0" startPos="38.49" endPos="63.49" friendlyPos="true"/>
+    <busStop id="2401658294" name="Lakshmipura Ulsoor" lane="464465186#7_0" startPos="0.00" endPos="13.34" friendlyPos="true" lines="190 K1 197"/>
+    <busStop id="2401658592" name="Halasuru" lane="464465205#1_0" startPos="51.52" endPos="66.52" friendlyPos="true" lines="190 K1 197"/>
+    <busStop id="2402160774" name="Royan Circle" lane="525778226#2_0" startPos="128.41" endPos="143.41" friendlyPos="true" lines="226M 226J 218A 218 220D 201M 234E 227C 227A 227N"/>
+    <busStop id="2405357303" name="Maniksha Parade Ground" lane="544761380#0_0" startPos="63.34" endPos="78.34" friendlyPos="true" lines="K1 197"/>
+    <busStop id="2406087671" name="ASC Center" lane="401908499#0_0" startPos="0.00" endPos="14.15" friendlyPos="true" lines="146E G2"/>
+    <busStop id="2406088640" name="Philomenas Hospital" lane="401993919#1_0" startPos="317.58" endPos="332.58" friendlyPos="true" lines="140 144K 141E"/>
+    <busStop id="2406090831" name="Subbaiah Circle" lane="132191814#5_0" startPos="34.77" endPos="59.77" friendlyPos="true"/>
+    <busStop id="2406093010" name="Poornima Talkies" lane="182196323#0_0" startPos="52.81" endPos="67.81" friendlyPos="true" lines="140"/>
+    <busStop id="2406115674" name="Vannarapete" lane="763175333#1_0" startPos="16.13" endPos="31.13" friendlyPos="true" lines="146E G2"/>
+    <busStop id="2406538301" name="Neelasandra Bus Stand" lane="763293417#1_0" startPos="7.49" endPos="15.00" friendlyPos="true" lines="144E 144"/>
+    <busStop id="246396993" name="Bangalore City Junction" lane="101835462#1_0" startPos="87.92" endPos="287.92" friendlyPos="true">
+        <access lane="150216122_0" pos="0.00" length="94.38" friendlyPos="1"/>
+        <access lane="31235686#2_0" pos="13.44" length="94.24" friendlyPos="1"/>
+        <access lane="31235686#3_0" pos="0.20" length="90.70" friendlyPos="1"/>
+        <access lane="31235686#4_0" pos="13.64" length="86.52" friendlyPos="1"/>
+        <access lane="53861849#1_0" pos="16.02" length="94.91" friendlyPos="1"/>
+    </busStop>
+    <busStop id="2468903219" name="Mallya Hospital" lane="36851759#0_0" startPos="193.45" endPos="208.45" friendlyPos="true" lines="333 K4 K6 37 368 34 27N 27A 27 234F 215U 210FA 182 166 161D 161B 15K 155 154 13S 13K 13J 13H 13E 13D 13C 13A 13 210Q 210G"/>
+    <busStop id="247991562" name="Anepalya" lane="28842920#4_0" startPos="0.00" endPos="19.96" friendlyPos="true"/>
+    <busStop id="248838952" name="Kohinoor Ground" lane="23060963#4_0" startPos="2.47" endPos="17.47" friendlyPos="true" lines="TR12"/>
+    <busStop id="249082241" name="Naga Talkies" lane="36970818#1_0" startPos="366.80" endPos="391.80" friendlyPos="true"/>
+    <busStop id="249084526" name="Magadi Road 1st Cross" lane="170931909#0_0" startPos="1229.94" endPos="1244.94" friendlyPos="true"/>
+    <busStop id="249087970" name="Mysore Bank" lane="23076927#5_0" startPos="202.48" endPos="217.48" friendlyPos="true" lines="286A 111 293C KBS3A 342F V342F"/>
+    <busStop id="249141343" name="Sajjan Rao Circle" lane="38042634#0_0" startPos="15.52" endPos="40.52" friendlyPos="true"/>
+    <busStop id="251146210" name="Military Accounts Office" lane="638531682#0_0" startPos="22.53" endPos="37.53" friendlyPos="true"/>
+    <busStop id="253890237" name="Trinity Circle" lane="638531680#1_0" startPos="421.36" endPos="436.36" friendlyPos="true" lines="G2"/>
+    <busStop id="2577090341" lane="362206700#3_0" startPos="55.58" endPos="80.58" friendlyPos="true"/>
+    <busStop id="2723747022" name="Mallige Hospital Siddapura" lane="130989093#0_0" startPos="93.97" endPos="118.97" friendlyPos="true"/>
+    <busStop id="287905435" name="Hasanath College" lane="484510041#5_0" startPos="38.98" endPos="53.98" friendlyPos="true" lines="K1 197"/>
+    <busStop id="2949043344" name="Lido Talkies" lane="464465205#10_0" startPos="92.21" endPos="107.21" friendlyPos="true" lines="190 K1 197"/>
+    <busStop id="296030070" name="Hosmat Hospital" lane="27007398#4_0" startPos="88.60" endPos="103.60" friendlyPos="true" lines="333"/>
+    <busStop id="3170033034" name="Halasuru" lane="464465205#1_0" startPos="61.16" endPos="76.16" friendlyPos="true"/>
+    <busStop id="3304155383" name="Dickenson Road" lane="72099280#3_0" startPos="38.01" endPos="53.01" friendlyPos="true" lines="K1 197"/>
+    <busStop id="3344494904" name="Mayo Hall" lane="124316745#8_0" startPos="16.86" endPos="31.86" friendlyPos="true" lines="333 K4 144K 141E"/>
+    <busStop id="3356616803" name="Corporation, Mission Road (Towards Subbiah Circle)" lane="328836686_0" startPos="49.79" endPos="64.79" friendlyPos="true" lines="146E"/>
+    <busStop id="3356616803@8858789" name="Corporation, Mission Road (Towards Subbiah Circle)" lane="764329021_0" startPos="43.06" endPos="58.06" friendlyPos="true" lines="342F G6 V342F"/>
+    <busStop id="3356616804" name="Richmond Circle" lane="766406228#1_0" startPos="12.25" endPos="27.25" friendlyPos="true" lines="333 K4"/>
+    <busStop id="3356616804@9740026" name="Richmond Circle" lane="208698150_0" startPos="88.02" endPos="103.02" friendlyPos="true" lines="TR7 MBS14 37E 34B 13F 13B"/>
+    <busStop id="3406880176" name="Vellara Junction" lane="239441161#0_0" startPos="47.99" endPos="62.99" friendlyPos="true" lines="G4"/>
+    <busStop id="3476877517" name="Hosmat Hospital" lane="327550407#4_0" startPos="117.26" endPos="132.26" friendlyPos="true" lines="190"/>
+    <busStop id="3730961538" name="MG Road" lane="263812623#0_0" startPos="130.31" endPos="145.31" friendlyPos="true" lines="K4"/>
+    <busStop id="3740957800" name="Manikshaw Parade Ground" lane="544761383#1_0" startPos="13.42" endPos="28.42" friendlyPos="true" lines="169 144E 144"/>
+    <busStop id="3741208080" name="Kasturba Road" lane="26283603#3_0" startPos="8.28" endPos="33.28" friendlyPos="true"/>
+    <busStop id="3741208081" name="Kasturba Road" lane="26283603#3_0" startPos="6.93" endPos="21.93" friendlyPos="true" lines="293E 292"/>
+    <busStop id="3755608904" lane="31235676_0" startPos="117.27" endPos="120.32" friendlyPos="true"/>
+    <busStop id="3755675146" name="Kempegowda Bus Station" lane="498554151_0" startPos="69.71" endPos="77.35" friendlyPos="true" lines="286A"/>
+    <busStop id="3755675146@10591795" name="Kempegowda Bus Station" lane="580772044_0" startPos="0.00" endPos="7.50" friendlyPos="true" lines="333 146E 292B 294B 290B"/>
+    <busStop id="3755675146@10603778" name="Kempegowda Bus Station" lane="498554152#2_0" startPos="9.47" endPos="16.97" friendlyPos="true" lines="290D"/>
+    <busStop id="3875744057" name="Platform 1" lane="31235673_0" startPos="33.07" endPos="48.07" friendlyPos="true"/>
+    <busStop id="3875744058" name="Platform 2" lane="31235673_0" startPos="45.79" endPos="60.79" friendlyPos="true"/>
+    <busStop id="3875768038" name="Platform 3" lane="31235673_0" startPos="73.07" endPos="88.07" friendlyPos="true"/>
+    <busStop id="3875768039" name="Platform 4" lane="31235673_0" startPos="131.09" endPos="146.09" friendlyPos="true"/>
+    <busStop id="3875768040" name="Platform 5" lane="31235673_0" startPos="173.15" endPos="147.95" friendlyPos="true"/>
+    <busStop id="3875790066" name="Platform 6" lane="498839285_0" startPos="2.82" endPos="17.82" friendlyPos="true"/>
+    <busStop id="3875790067" name="Platform 6A" lane="28631926_0" startPos="38.41" endPos="53.41" friendlyPos="true"/>
+    <busStop id="3875790068" name="Platform 7" lane="28631926_0" startPos="11.40" endPos="26.40" friendlyPos="true"/>
+    <busStop id="3875790069" name="Platform 8" lane="498845912_0" startPos="31.52" endPos="43.30" friendlyPos="true"/>
+    <busStop id="3875790070" name="Platform 8A" lane="28631926_0" startPos="0.00" endPos="9.49" friendlyPos="true"/>
+    <busStop id="3943325827" name="KR Circle" lane="52032727_0" startPos="67.52" endPos="74.75" friendlyPos="true" lines="333 146E 342F"/>
+    <busStop id="3943325827@9412775" name="KR Circle" lane="391160983_0" startPos="16.06" endPos="31.06" friendlyPos="true" lines="52 V342F"/>
+    <busStop id="4144220197" name="Chinnaswamy Stadium" lane="107215083#1_0" startPos="72.40" endPos="87.40" friendlyPos="true" lines="293E 292 TR7"/>
+    <busStop id="4144224291" name="Chinnaswamy Stadium" lane="730432812#3_0" startPos="33.37" endPos="48.37" friendlyPos="true" lines="TR4A K6 37 368 342WA 34 27N 27E 27A 27 234F 215U 210FA 182 166 161D 161B 15K 155 154 13S 13K 13J 13H 13E 13D 13C 13A 13 210Q 210G"/>
+    <busStop id="428836836" name="Richmond Circle" lane="171887405#12_0" startPos="90.66" endPos="105.66" friendlyPos="true" lines="190"/>
+    <busStop id="428847118" name="Trinity" lane="549187830_0" startPos="1097.14" endPos="1121.09" friendlyPos="true" lines="Purple">
+        <access lane="263812623#7_0" pos="1.22" length="12.18" friendlyPos="1"/>
+        <access lane="263812623#8_0" pos="0.00" length="11.99" friendlyPos="1"/>
+        <access lane="434696514_0" pos="3.17" length="12.88" friendlyPos="1"/>
+        <access lane="638541495#2_0" pos="45.80" length="14.07" friendlyPos="1"/>
+        <access lane="760125407_0" pos="0.00" length="14.94" friendlyPos="1"/>
+    </busStop>
+    <busStop id="429001259" name="State Bank India Garage" lane="26283651#2_0" startPos="105.66" endPos="120.66" friendlyPos="true" lines="TR7 MBS14 37E 34B 13F 13B"/>
+    <busStop id="4294218096" name="Elgin Floor Mill" lane="764329020#0_0" startPos="78.94" endPos="93.94" friendlyPos="true"/>
+    <busStop id="4307590416" name="Philomenas Hospital" lane="57885669#0_0" startPos="18.46" endPos="33.46" friendlyPos="true" lines="146E 144E 144"/>
+    <busStop id="431524247" name="Halasuru" lane="549187829_0" startPos="1287.59" endPos="1313.24" friendlyPos="true" lines="Purple">
+        <access lane="-437169586#0_0" pos="32.73" length="23.30" friendlyPos="1"/>
+        <access lane="437169586#0_0" pos="0.00" length="26.70" friendlyPos="1"/>
+        <access lane="464465205#4_0" pos="4.25" length="9.73" friendlyPos="1"/>
+        <access lane="492441116#0_0" pos="0.00" length="23.91" friendlyPos="1"/>
+        <access lane="638541497#16_0" pos="104.47" length="11.60" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4349257795" name="Lalbhag Hopcoms" lane="145409123#2_0" startPos="154.17" endPos="169.17" friendlyPos="true" lines="341C"/>
+    <busStop id="452414811" name="Corporation Circle (Cubbon Park)" lane="154340361#3_0" startPos="11.02" endPos="26.02" friendlyPos="true" lines="293E 333 292 K4"/>
+    <busStop id="4595656669" name="Halasur Police Station" lane="464465205#9_0" startPos="1.41" endPos="16.41" friendlyPos="true" lines="190 K1 197"/>
+    <busStop id="4676553346" name="Cubbon Park" lane="44829220_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="Purple">
+        <access lane="107215088#2_0" pos="47.90" length="21.91" friendlyPos="1"/>
+        <access lane="362900184_0" pos="0.00" length="28.60" friendlyPos="1"/>
+        <access lane="362900185#0_0" pos="0.00" length="14.03" friendlyPos="1"/>
+        <access lane="508711047_0" pos="0.00" length="14.08" friendlyPos="1"/>
+        <access lane="508711049#0_0" pos="0.00" length="25.16" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4843099635" name="KH Road" lane="36853146#2_0" startPos="38.27" endPos="53.27" friendlyPos="true" lines="190 342F G6 V342F"/>
+    <busStop id="4846787925" name="Mayo Hall" lane="325833350#1_0" startPos="143.38" endPos="155.23" friendlyPos="true" lines="144E 144"/>
+    <busStop id="5256079585" name="Binny Mill" lane="36897689#3_0" startPos="28.34" endPos="53.34" friendlyPos="true"/>
+    <busStop id="5265674077" name="Royan Circle" lane="23076199#0_0" startPos="43.17" endPos="58.17" friendlyPos="true" lines="TR12"/>
+    <busStop id="5305932617" name="Nadaprabhu Kempegowda Station, Majestic (Purple Line)" lane="133867981_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="Purple">
+        <access lane="-510973203_0" pos="0.00" length="97.17" friendlyPos="1"/>
+        <access lane="28631978#1_0" pos="135.76" length="139.63" friendlyPos="1"/>
+        <access lane="510973203_0" pos="206.99" length="101.74" friendlyPos="1"/>
+        <access lane="544757155#1_0" pos="96.82" length="186.30" friendlyPos="1"/>
+        <access lane="630675225_0" pos="0.00" length="71.31" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5335240455" name="Maharani College, KR Circle" lane="779282846_0" startPos="19.09" endPos="34.09" friendlyPos="true"/>
+    <busStop id="5335240458" name="Maharani College, KR Circle" lane="779282846_0" startPos="20.07" endPos="35.07" friendlyPos="true" lines="333 146E 292B 294B 290B 342F 52 V342F"/>
+    <busStop id="5358355670" name="Ramakrishna Ashrama, Gavipuram Extention" lane="555368896#0_0" startPos="40.81" endPos="55.81" friendlyPos="true"/>
+    <busStop id="5464787094" name="Nadaprabhu Kempegowda Station, Majestic (Green Line)" lane="549256482_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="Green">
+        <access lane="-510973203_0" pos="22.23" length="61.92" friendlyPos="1"/>
+        <access lane="28631978#1_0" pos="147.63" length="147.74" friendlyPos="1"/>
+        <access lane="510973203_0" pos="183.40" length="66.72" friendlyPos="1"/>
+        <access lane="53857348_0" pos="66.24" length="172.13" friendlyPos="1"/>
+        <access lane="630675225_0" pos="0.00" length="64.46" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5558684076" name="St. Joseph&apos;s College" lane="461556535#6_0" startPos="142.28" endPos="157.28" friendlyPos="true"/>
+    <busStop id="5558684094" name="KR Market" lane="190144809#0_0" startPos="0.00" endPos="7.50" friendlyPos="true"/>
+    <busStop id="5558684111" lane="498554151_0" startPos="69.85" endPos="77.35" friendlyPos="true"/>
+    <busStop id="5560544561" name="Hudson Circle" lane="224618934#5_0" startPos="17.93" endPos="32.93" friendlyPos="true"/>
+    <busStop id="5560544562" name="Shantinagara TTMC" lane="375964869_0" startPos="0.00" endPos="7.50" friendlyPos="true"/>
+    <busStop id="568344479" name="Dr. B R Ambedkar Station, Vidhana Soudha" lane="44829220_0" startPos="680.23" endPos="684.73" friendlyPos="true" lines="Purple">
+        <access lane="-38542545#1_0" pos="40.31" length="88.33" friendlyPos="1"/>
+        <access lane="-52059632_0" pos="27.93" length="95.15" friendlyPos="1"/>
+        <access lane="362206700#2_0" pos="141.52" length="5.63" friendlyPos="1"/>
+        <access lane="362206701#5_0" pos="135.97" length="17.39" friendlyPos="1"/>
+        <access lane="38542545#1_0" pos="43.82" length="83.53" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760197788" name="Krantivira Sangolli Rayanna Railway Station" lane="607901258_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="457464671#0_0" pos="121.97" length="2.09" friendlyPos="1"/>
+        <access lane="457464671#1_0" pos="17.63" length="18.50" friendlyPos="1"/>
+        <access lane="457467384_0" pos="12.61" length="71.63" friendlyPos="1"/>
+        <access lane="457467385_0" pos="13.39" length="53.62" friendlyPos="1"/>
+        <access lane="457467387_0" pos="12.82" length="38.60" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760197792" name="Indiranagar" lane="607901263_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="126774193#12_0" pos="138.90" length="102.02" friendlyPos="1"/>
+        <access lane="464465186#0_0" pos="0.00" length="103.59" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760197793" name="Halasuru" lane="607901263_0" startPos="1292.34" endPos="1317.52" friendlyPos="true">
+        <access lane="-492441116#0_0" pos="66.20" length="22.32" friendlyPos="1"/>
+        <access lane="464465205#4_0" pos="4.49" length="17.18" friendlyPos="1"/>
+        <access lane="492441116#0_0" pos="0.00" length="18.23" friendlyPos="1"/>
+        <access lane="638541497#16_0" pos="104.29" length="4.15" friendlyPos="1"/>
+        <access lane="638541497#17_0" pos="0.00" length="28.40" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760197794" name="Trinity" lane="607901264_0" startPos="1091.12" endPos="1115.44" friendlyPos="true">
+        <access lane="-760125407_0" pos="88.55" length="7.93" friendlyPos="1"/>
+        <access lane="263812623#7_0" pos="1.22" length="7.71" friendlyPos="1"/>
+        <access lane="263812623#8_0" pos="0.00" length="7.22" friendlyPos="1"/>
+        <access lane="434696514_0" pos="3.17" length="14.80" friendlyPos="1"/>
+        <access lane="760125407_0" pos="0.00" length="7.81" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760197795" name="Mahatma Gandhi Road" lane="607901265_0" startPos="1045.28" endPos="1144.82" friendlyPos="true">
+        <access lane="327534070#5_0" pos="6.69" length="39.90" friendlyPos="1"/>
+        <access lane="327534071_0" pos="0.00" length="12.08" friendlyPos="1"/>
+        <access lane="396903045#1_0" pos="533.13" length="2.31" friendlyPos="1"/>
+        <access lane="435249314#1_0" pos="109.74" length="32.27" friendlyPos="1"/>
+        <access lane="4354953#7_0" pos="537.75" length="9.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760197798" name="Cubbon Park" lane="607901268_0" startPos="357.49" endPos="439.46" friendlyPos="true">
+        <access lane="107215088#2_0" pos="47.90" length="28.20" friendlyPos="1"/>
+        <access lane="362900184_0" pos="0.00" length="33.68" friendlyPos="1"/>
+        <access lane="362900185#0_0" pos="0.00" length="13.13" friendlyPos="1"/>
+        <access lane="508711047_0" pos="0.00" length="11.32" friendlyPos="1"/>
+        <access lane="508711049#0_0" pos="0.00" length="32.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760197799" name="Dr. B R Ambedkar Station, Vidhana Soudha" lane="607901269_0" startPos="686.50" endPos="690.58" friendlyPos="true">
+        <access lane="-38542545#1_0" pos="39.76" length="80.93" friendlyPos="1"/>
+        <access lane="362206700#2_0" pos="142.05" length="13.04" friendlyPos="1"/>
+        <access lane="362206701#5_0" pos="135.36" length="9.99" friendlyPos="1"/>
+        <access lane="372150308#0_0" pos="63.65" length="97.56" friendlyPos="1"/>
+        <access lane="38542545#1_0" pos="44.36" length="76.13" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760197800" name="Nadaprabhu Kempegowda Station, Majestic (Purple Line)" lane="607901259_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-510973203_0" pos="34.63" length="52.92" friendlyPos="1"/>
+        <access lane="373570000_0" pos="123.10" length="163.39" friendlyPos="1"/>
+        <access lane="510973203_0" pos="171.84" length="57.72" friendlyPos="1"/>
+        <access lane="53857348_0" pos="66.24" length="169.40" friendlyPos="1"/>
+        <access lane="630675225_0" pos="0.00" length="96.17" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760197802" name="Sir M Vishweshwariah - Central College" lane="607901270_0" startPos="842.62" endPos="931.32" friendlyPos="true">
+        <access lane="-133867982#1_0" pos="100.20" length="5.36" friendlyPos="1"/>
+        <access lane="133867982#0_0" pos="263.41" length="72.03" friendlyPos="1"/>
+        <access lane="133867982#1_0" pos="43.02" length="0.56" friendlyPos="1"/>
+        <access lane="52244620_0" pos="0.00" length="68.28" friendlyPos="1"/>
+        <access lane="52245876_0" pos="5.08" length="68.33" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760198468" name="Nadaprabhu Kempegowda Station, Majestic (Green Line)" lane="607901285_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-510973203_0" pos="34.40" length="104.98" friendlyPos="1"/>
+        <access lane="373570000_0" pos="123.10" length="150.77" friendlyPos="1"/>
+        <access lane="510973203_0" pos="171.84" length="109.81" friendlyPos="1"/>
+        <access lane="544757155#1_0" pos="63.84" length="152.82" friendlyPos="1"/>
+        <access lane="630675225_0" pos="0.00" length="115.06" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760198469" name="Chikkapete" lane="607901285_0" startPos="885.38" endPos="963.66" friendlyPos="true">
+        <access lane="-38540558#8_0" pos="75.37" length="66.93" friendlyPos="1"/>
+        <access lane="-744544603_0" pos="157.63" length="37.88" friendlyPos="1"/>
+        <access lane="38540558#7_0" pos="13.58" length="80.56" friendlyPos="1"/>
+        <access lane="38540558#8_0" pos="19.39" length="62.13" friendlyPos="1"/>
+        <access lane="744544603_0" pos="35.67" length="42.68" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760198472" name="Lalbagh" lane="607901289_0" startPos="906.69" endPos="817.42" friendlyPos="true">
+        <access lane="-149105514#1_0" pos="45.13" length="71.44" friendlyPos="1"/>
+        <access lane="149105514#1_0" pos="78.30" length="66.64" friendlyPos="1"/>
+        <access lane="23053764#4_0" pos="70.06" length="22.26" friendlyPos="1"/>
+        <access lane="490723309#0_0" pos="1077.64" length="12.22" friendlyPos="1"/>
+        <access lane="53583678_0" pos="301.04" length="52.82" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760198473" name="Krishna Rajendra Market" lane="607901286_0" startPos="573.52" endPos="667.44" friendlyPos="true">
+        <access lane="-373575002#2_0" pos="0.00" length="40.62" friendlyPos="1"/>
+        <access lane="-727353146_0" pos="20.62" length="4.99" friendlyPos="1"/>
+        <access lane="373575000_0" pos="0.00" length="38.64" friendlyPos="1"/>
+        <access lane="373575002#2_0" pos="75.55" length="35.82" friendlyPos="1"/>
+        <access lane="727353146_0" pos="24.58" length="9.79" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5760198474" name="National College" lane="607901289_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-112380260#1_0" pos="0.00" length="55.78" friendlyPos="1"/>
+        <access lane="112380260#1_0" pos="19.42" length="51.68" friendlyPos="1"/>
+        <access lane="376490454#3_0" pos="228.06" length="10.49" friendlyPos="1"/>
+        <access lane="376490454#4_0" pos="0.00" length="57.26" friendlyPos="1"/>
+        <access lane="461209415#1_0" pos="23.54" length="19.03" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5772182583" name="Ejipura Bus Stand" lane="462585137_0" startPos="3.48" endPos="18.48" friendlyPos="true" lines="G2"/>
+    <busStop id="5803875104" name="NGV Gate" lane="8680571#3_0" startPos="35.12" endPos="50.12" friendlyPos="true" lines="G2"/>
+    <busStop id="597363270" name="Hudson Circle" lane="224618934#4_0" startPos="125.19" endPos="130.73" friendlyPos="true" lines="KBS3A 342F V342F"/>
+    <busStop id="6017833820" name="Rajendranagar" lane="370390351#10_0" startPos="0.00" endPos="11.22" friendlyPos="true" lines="G2"/>
+    <busStop id="6017833821" name="Ejipura Junction" lane="462585135_0" startPos="8.49" endPos="21.72" friendlyPos="true" lines="G2"/>
+    <busStop id="6017833823" name="ASC Center" lane="27946101#2_0" startPos="93.40" endPos="108.40" friendlyPos="true" lines="140 G2 141E"/>
+    <busStop id="6017833825" name="Military Accounts Office" lane="763175332#2_0" startPos="27.71" endPos="35.31" friendlyPos="true" lines="G2"/>
+    <busStop id="6017833826" name="Military Accounts Office" lane="638531680#1_0" startPos="12.17" endPos="27.17" friendlyPos="true" lines="G2"/>
+    <busStop id="6019408108" name="Shanthi Nagara Bus Station" lane="393699924_0" startPos="63.96" endPos="78.96" friendlyPos="true" lines="342F V342F"/>
+    <busStop id="6019408109" name="Wilson Garden Police Station" lane="23078462#1_0" startPos="58.14" endPos="68.38" friendlyPos="true" lines="342F V342F"/>
+    <busStop id="6019408109@9617110" name="Wilson Garden Police Station" lane="172899268#0_0" startPos="0.00" endPos="11.75" friendlyPos="true" lines="V342F"/>
+    <busStop id="6019408110" name="Wilson Garden 12th Cross" lane="172899344#2_0" startPos="20.74" endPos="35.74" friendlyPos="true" lines="342F V342F"/>
+    <busStop id="6460998309" name="Lalbag Main Gate" lane="169453737#0_0" startPos="24.11" endPos="39.11" friendlyPos="true" lines="341C"/>
+    <busStop id="6460998320" name="KR Market" lane="150357930#0_0" startPos="26.66" endPos="41.66" friendlyPos="true" lines="52 341C"/>
+    <busStop id="6461616259" name="Lalbagh Main Gate" lane="36965408#1_0" startPos="20.26" endPos="35.26" friendlyPos="true" lines="TR7 37E 34B"/>
+    <busStop id="6584009983" name="St Patrick&apos;s Church" lane="763290548#2_0" startPos="24.47" endPos="39.47" friendlyPos="true" lines="144K 141E"/>
+    <busStop id="663317710" name="St Marthas Hospital" lane="638928392#8_0" startPos="39.41" endPos="54.41" friendlyPos="true" lines="333 146E 52"/>
+    <busStop id="663551440" name="Vidhana Soudha" lane="362206701#4_0" startPos="96.61" endPos="111.61" friendlyPos="true" lines="293C 292B 294B 290B"/>
+    <busStop id="663551443" name="Vidhana Soudha" lane="362206700#3_0" startPos="15.31" endPos="30.31" friendlyPos="true" lines="290D"/>
+    <busStop id="663573130" name="Kasturba Road" lane="26283603#2_0" startPos="191.66" endPos="216.66" friendlyPos="true"/>
+    <busStop id="663573137" name="Kasturba Road" lane="36913434#4_0" startPos="14.29" endPos="29.29" friendlyPos="true" lines="TR4A K6 37 368 342WA 34 27N 27E 27A 27 234F 215U 210FA 182 166 161D 161B 15K 155 154 13S 13K 13J 13H 13E 13D 13C 13A 13 210Q 210G"/>
+    <busStop id="6645712420" name="Mallya Hospital" lane="36851759#0_0" startPos="193.43" endPos="208.43" friendlyPos="true"/>
+    <busStop id="665811373" lane="391160986_0" startPos="25.63" endPos="50.63" friendlyPos="true"/>
+    <busStop id="6681215517" name="Mysore Bank" lane="23076927#5_0" startPos="186.80" endPos="201.80" friendlyPos="true"/>
+    <busStop id="683352655" lane="23053764#2_0" startPos="0.00" endPos="16.52" friendlyPos="true"/>
+    <busStop id="683352664" name="Krumbigal Road" lane="99452388#4_0" startPos="12.16" endPos="27.16" friendlyPos="true" lines="190"/>
+    <busStop id="6834406250" name="Kasturba Road" lane="36913434#4_0" startPos="14.35" endPos="29.35" friendlyPos="true"/>
+    <busStop id="6834406251" name="Richmond Circle" lane="627144178#0_0" startPos="0.00" endPos="13.10" friendlyPos="true"/>
+    <busStop id="6834406252" name="Richmond Circle" lane="627144178#0_0" startPos="0.00" endPos="13.07" friendlyPos="true" lines="K6 37 34 27N 27A 27 215U 210FA 182 166 161D 161B 154 13S 13K 13J 13H 13E 13D 13C 13A 13 210G"/>
+    <busStop id="6834406267" name="Chinnaswamy Stadium" lane="107215083#1_0" startPos="65.93" endPos="80.93" friendlyPos="true"/>
+    <busStop id="6834406268" name="Chinnaswamy Stadium" lane="730432812#3_0" startPos="30.54" endPos="45.54" friendlyPos="true"/>
+    <busStop id="7093027179" name="10th Cross Magadi Road" lane="170932623_0" startPos="844.94" endPos="859.94" friendlyPos="true"/>
+    <busStop id="7093027180" name="5th Cross Magadi Road" lane="170932623_0" startPos="419.44" endPos="434.44" friendlyPos="true"/>
+    <busStop id="7093027181" name="1st Cross Magadi Road" lane="170932623_0" startPos="62.53" endPos="77.53" friendlyPos="true"/>
+    <busStop id="7093027182" name="Binny Mill" lane="767326470#0_0" startPos="12.32" endPos="27.32" friendlyPos="true"/>
+    <busStop id="7093073087" name="Royan Circle" lane="23076199#0_0" startPos="43.18" endPos="58.18" friendlyPos="true"/>
+    <busStop id="7093073088" name="Makkala Koota" lane="759364436_0" startPos="29.56" endPos="44.56" friendlyPos="true"/>
+    <busStop id="7093073089" name="Chamarajapet" lane="162697329#0_0" startPos="45.38" endPos="60.38" friendlyPos="true"/>
+    <busStop id="7093073090" name="Bengaluru High School, Kempe Gowda Nagara" lane="555368896#2_0" startPos="31.07" endPos="46.07" friendlyPos="true"/>
+    <busStop id="7093073091" name="Kohinoor Ground" lane="23060963#4_0" startPos="2.48" endPos="17.48" friendlyPos="true"/>
+    <busStop id="7093073092" name="Hanumantha Nagara Syndicate Bank" lane="491480310#0_0" startPos="22.45" endPos="37.45" friendlyPos="true"/>
+    <busStop id="7104861390" name="Corporation" lane="23076927#1_0" startPos="7.00" endPos="22.00" friendlyPos="true"/>
+    <busStop id="7104861391" name="Town Hall" lane="310910082_0" startPos="22.97" endPos="37.97" friendlyPos="true"/>
+    <busStop id="7104861392" name="KR Market" lane="328765452_0" startPos="90.52" endPos="94.62" friendlyPos="true"/>
+    <busStop id="7104861407" name="KR Market" lane="760543010_0" startPos="0.00" endPos="7.50" friendlyPos="true" lines="293E 286A 292"/>
+    <busStop id="7105069821" name="Rama Mandira Chamarajapet" lane="23076215#0_0" startPos="489.36" endPos="504.36" friendlyPos="true"/>
+    <busStop id="7105069822" name="Chamarajapet" lane="23076215#5_0" startPos="31.72" endPos="46.72" friendlyPos="true"/>
+    <busStop id="7105069824" name="Makkala Koota" lane="162697329#4_0" startPos="87.51" endPos="102.51" friendlyPos="true"/>
+    <busStop id="7105069826" name="KR Market" lane="150357930#0_0" startPos="26.68" endPos="41.68" friendlyPos="true"/>
+    <busStop id="7105069827" name="Town Hall" lane="688824223#0_0" startPos="19.91" endPos="34.91" friendlyPos="true"/>
+    <busStop id="7105069828" name="Corporation Circle" lane="781001554#0_0" startPos="31.27" endPos="43.40" friendlyPos="true"/>
+    <busStop id="7105069829" name="St Marthas Hospital" lane="638928392#8_0" startPos="39.39" endPos="54.39" friendlyPos="true"/>
+    <busStop id="7105069830" name="KR Circle" lane="391160983_0" startPos="32.60" endPos="47.60" friendlyPos="true"/>
+    <busStop id="7105069831" name="Khodays Circle" lane="372018380_0" startPos="14.24" endPos="29.24" friendlyPos="true"/>
+    <busStop id="7106320854" name="Corporation Circle (Cubbon Park)" lane="154340361#3_0" startPos="11.06" endPos="26.06" friendlyPos="true"/>
+    <busStop id="7106320855" name="Kasturba Road" lane="26283603#3_0" startPos="6.18" endPos="21.18" friendlyPos="true"/>
+    <busStop id="7106320856" name="MG Statue" lane="26283603#9_0" startPos="7.45" endPos="22.45" friendlyPos="true"/>
+    <busStop id="7106320857" name="MG Statue" lane="26283603#9_0" startPos="7.43" endPos="22.43" friendlyPos="true" lines="293E 292"/>
+    <busStop id="7108562602" name="Dickenson Road" lane="72099282_0" startPos="60.68" endPos="75.68" friendlyPos="true"/>
+    <busStop id="7108562603" name="Commercial Street" lane="542070644#3_0" startPos="10.47" endPos="25.47" friendlyPos="true" lines="169"/>
+    <busStop id="7108562604" name="Manikshaw Parade Ground" lane="544761383#1_0" startPos="13.40" endPos="28.40" friendlyPos="true"/>
+    <busStop id="7131511276" name="KR Market" lane="149104364_0" startPos="0.00" endPos="7.50" friendlyPos="true"/>
+    <busStop id="7131511277" name="KR Market" lane="763175322_0" startPos="42.24" endPos="49.84" friendlyPos="true" lines="140"/>
+    <busStop id="7131511277@10601097" name="KR Market" lane="149104364_0" startPos="0.00" endPos="7.50" friendlyPos="true" lines="111 293C"/>
+    <busStop id="7131511278" name="Poornima Talkies" lane="182196323#0_0" startPos="52.80" endPos="67.80" friendlyPos="true"/>
+    <busStop id="7131511279" name="Akkithimmanahalli" lane="23018325#2_0" startPos="53.11" endPos="68.11" friendlyPos="true"/>
+    <busStop id="7131511280" name="Nanjappa Circle" lane="23018325#12_0" startPos="4.46" endPos="15.00" friendlyPos="true"/>
+    <busStop id="7131511281" name="Philomenas Hospital" lane="401993919#1_0" startPos="318.10" endPos="333.10" friendlyPos="true"/>
+    <busStop id="7131511282" name="Austin Town" lane="401908497#2_0" startPos="35.73" endPos="50.73" friendlyPos="true"/>
+    <busStop id="7131511283" name="ASC Center" lane="27946101#2_0" startPos="93.38" endPos="108.38" friendlyPos="true"/>
+    <busStop id="7131511284" name="Vannarapete" lane="763175333#1_0" startPos="14.35" endPos="29.35" friendlyPos="true"/>
+    <busStop id="7131541685" name="Vivekanagara" lane="38771628#0_0" startPos="0.00" endPos="7.50" friendlyPos="true"/>
+    <busStop id="7132401123" name="Shantinagara TTMC" lane="766406231_0" startPos="92.87" endPos="101.40" friendlyPos="true" lines="342F 37E"/>
+    <busStop id="7132401123@9219524" name="Shantinagara TTMC" lane="393699921#1_0" startPos="74.57" endPos="89.57" friendlyPos="true" lines="G6"/>
+    <busStop id="7132401123@9740188" name="Shantinagara TTMC" lane="375964869_0" startPos="0.00" endPos="7.50" friendlyPos="true" lines="13F 13B"/>
+    <busStop id="7132418217" name="KH Road" lane="36853146#2_0" startPos="38.29" endPos="53.29" friendlyPos="true"/>
+    <busStop id="7132418218" name="Subbaiah Circle" lane="328836685#5_0" startPos="11.64" endPos="26.64" friendlyPos="true"/>
+    <busStop id="7132418219" name="Corporation, Mission Road (Towards Subbiah Circle)" lane="328836686_0" startPos="49.76" endPos="64.76" friendlyPos="true"/>
+    <busStop id="7132418220" name="KR Market" lane="36885143#10_0" startPos="150.67" endPos="165.67" friendlyPos="true"/>
+    <busStop id="7132418221" name="KR Market" lane="36885143#10_0" startPos="151.24" endPos="166.24" friendlyPos="true" lines="G6"/>
+    <busStop id="7132418222" name="Vinayaka Talkies" lane="525778225#1_0" startPos="48.23" endPos="63.23" friendlyPos="true"/>
+    <busStop id="7132418223" name="Vinayaka Talkies" lane="525778225#1_0" startPos="47.97" endPos="62.97" friendlyPos="true" lines="G6"/>
+    <busStop id="7132452572" name="Mayo Hall" lane="124316745#8_0" startPos="16.88" endPos="31.88" friendlyPos="true"/>
+    <busStop id="7132452573" name="Anil Kumble Circle" lane="323813903#2_0" startPos="91.49" endPos="106.49" friendlyPos="true"/>
+    <busStop id="7132452574" name="MG Road Metro Station" lane="435249314#1_0" startPos="134.43" endPos="149.43" friendlyPos="true"/>
+    <busStop id="7132452575" name="MG Road Metro Station" lane="435249314#1_0" startPos="134.44" endPos="149.44" friendlyPos="true" lines="144K 141E"/>
+    <busStop id="7132452576" name="Vivekanagara" lane="38772795#0_0" startPos="0.00" endPos="11.31" friendlyPos="true"/>
+    <busStop id="7132452578" name="Vivek Nagar Police Station, Ravi Tent" lane="52736010#1_0" startPos="0.00" endPos="14.53" friendlyPos="true"/>
+    <busStop id="7132452580" name="Shine Bakery" lane="52736010#6_0" startPos="45.60" endPos="54.25" friendlyPos="true"/>
+    <busStop id="7132452582" name="Fairland Shop" lane="52736010#11_0" startPos="0.00" endPos="12.56" friendlyPos="true"/>
+    <busStop id="7132452583" name="Ejipura" lane="52736010#17_0" startPos="62.37" endPos="77.37" friendlyPos="true"/>
+    <busStop id="7132495619" name="Neelasandra Bus Stand" lane="763293417#1_0" startPos="2.14" endPos="15.00" friendlyPos="true"/>
+    <busStop id="7132495621" name="Neelasandra Rose Garden" lane="28126587#0_0" startPos="0.00" endPos="7.50" friendlyPos="true"/>
+    <busStop id="7132495622" name="Neelasandra Rose Garden" lane="28126587#0_0" startPos="0.00" endPos="7.52" friendlyPos="true" lines="144K"/>
+    <busStop id="7132495623" name="Neelasandra Rose Garden" lane="28126587#1_0" startPos="0.00" endPos="13.69" friendlyPos="true"/>
+    <busStop id="7132495624" name="Neelasandra Bus Stand" lane="401993930#0_0" startPos="0.00" endPos="7.50" friendlyPos="true"/>
+    <busStop id="7132495625" name="Austin Town" lane="401908497#0_0" startPos="47.74" endPos="62.74" friendlyPos="true"/>
+    <busStop id="7132495626" name="Austin Town" lane="401908497#0_0" startPos="47.74" endPos="62.74" friendlyPos="true" lines="146E 144E 144"/>
+    <busStop id="7132495627" name="Philomenas Hospital" lane="57885669#0_0" startPos="19.48" endPos="34.48" friendlyPos="true"/>
+    <busStop id="7132495628" name="D&apos;Souza Circle" lane="132191817#3_0" startPos="0.84" endPos="15.84" friendlyPos="true"/>
+    <busStop id="7132495629" name="D&apos;Souza Circle" lane="132191817#3_0" startPos="0.83" endPos="15.83" friendlyPos="true" lines="144E 144"/>
+    <busStop id="7132495630" name="Lifestyle" lane="133632534#6_0" startPos="42.36" endPos="57.36" friendlyPos="true"/>
+    <busStop id="7132495631" name="Garuda Mall" lane="132191817#0_0" startPos="71.67" endPos="86.67" friendlyPos="true"/>
+    <busStop id="7132495632" name="Garuda Mall" lane="132191817#0_0" startPos="71.66" endPos="86.66" friendlyPos="true" lines="144E 144"/>
+    <busStop id="7132495633" name="Mayo Hall" lane="325833350#1_0" startPos="143.39" endPos="155.23" friendlyPos="true"/>
+    <busStop id="7133498156" name="Command Hospital" lane="638531682#2_0" startPos="228.06" endPos="243.06" friendlyPos="true"/>
+    <busStop id="7133498157" name="Military Accounts Office" lane="638531682#0_0" startPos="21.69" endPos="36.69" friendlyPos="true" lines="333"/>
+    <busStop id="7133498158" name="Hosmat Hospital" lane="27007398#4_0" startPos="88.57" endPos="103.57" friendlyPos="true"/>
+    <busStop id="7136947081" name="Richmond Circle" lane="208698150_0" startPos="87.63" endPos="102.63" friendlyPos="true"/>
+    <busStop id="7140560430" name="Ejipura" lane="52736010#17_0" startPos="81.94" endPos="89.21" friendlyPos="true"/>
+    <busStop id="7140560432" name="Fairland Shop" lane="52736010#9_0" startPos="27.90" endPos="42.90" friendlyPos="true"/>
+    <busStop id="7140560433" name="Fairland Shop" lane="52736010#9_0" startPos="27.90" endPos="42.90" friendlyPos="true" lines="146E"/>
+    <busStop id="7140560434" name="Shine Bakery" lane="52736010#6_0" startPos="16.56" endPos="31.56" friendlyPos="true"/>
+    <busStop id="7140560435" name="Shine Bakery" lane="52736010#6_0" startPos="16.57" endPos="31.57" friendlyPos="true" lines="146E"/>
+    <busStop id="7140560436" name="ASC Center" lane="401908499#0_0" startPos="0.00" endPos="14.55" friendlyPos="true"/>
+    <busStop id="7140560437" name="Johnson Market" lane="764329020#0_0" startPos="587.56" endPos="602.56" friendlyPos="true"/>
+    <busStop id="7140560438" name="Elgin Floor Mill" lane="764329020#0_0" startPos="84.43" endPos="99.43" friendlyPos="true" lines="146E"/>
+    <busStop id="7140560439" name="Nanjappa Circle" lane="532166929_0" startPos="19.69" endPos="34.69" friendlyPos="true"/>
+    <busStop id="7140560440" name="Nanjappa Circle" lane="23018325#11_0" startPos="15.35" endPos="26.68" friendlyPos="true" lines="146E"/>
+    <busStop id="7140560441" name="Akkithimmanahalli" lane="23018325#2_0" startPos="104.37" endPos="119.37" friendlyPos="true"/>
+    <busStop id="7140560442" name="Akkithimmanahalli" lane="23018325#2_0" startPos="104.38" endPos="119.38" friendlyPos="true" lines="146E"/>
+    <busStop id="7140563292" name="Cauvery Bhavana" lane="38684971#0_0" startPos="69.84" endPos="84.84" friendlyPos="true"/>
+    <busStop id="7140563293" name="Maharanis College" lane="160558221#1_0" startPos="21.08" endPos="36.08" friendlyPos="true"/>
+    <busStop id="7140563294" name="Maharanis College" lane="160558221#1_0" startPos="21.04" endPos="36.04" friendlyPos="true" lines="111"/>
+    <busStop id="7140563295" name="Telephone Exchange AGO, Vasantha Nagara" lane="160558221#2_0" startPos="376.67" endPos="391.67" friendlyPos="true"/>
+    <busStop id="7140581378" name="KR Circle" lane="133867982#0_0" startPos="7.90" endPos="22.90" friendlyPos="true"/>
+    <busStop id="7140581382" name="Vidhana Soudha" lane="362206701#4_0" startPos="96.67" endPos="111.67" friendlyPos="true"/>
+    <busStop id="7141213457" name="Indian Christian Cemetry" lane="28842920#4_0" startPos="39.88" endPos="54.88" friendlyPos="true"/>
+    <busStop id="7141213459" name="Elgin Floor Mill" lane="239441161#1_0" startPos="700.07" endPos="715.07" friendlyPos="true"/>
+    <busStop id="7141213460" name="Elgin Flour Mill" lane="239441161#1_0" startPos="700.05" endPos="715.05" friendlyPos="true" lines="G4"/>
+    <busStop id="7141213461" name="Johnson Market" lane="239441161#1_0" startPos="80.69" endPos="95.69" friendlyPos="true"/>
+    <busStop id="7141213462" name="Johnson Market" lane="239441161#1_0" startPos="80.70" endPos="95.70" friendlyPos="true" lines="G4"/>
+    <busStop id="7141213463" name="Vellara Junction" lane="239441161#0_0" startPos="54.89" endPos="69.89" friendlyPos="true"/>
+    <busStop id="7141213464" name="Brigade Road" lane="23029716_0" startPos="0.00" endPos="7.50" friendlyPos="true"/>
+    <busStop id="7142097522" name="Cauvery Bhavana" lane="234946738#2_0" startPos="203.18" endPos="218.18" friendlyPos="true"/>
+    <busStop id="7142097523" name="Cauvery Bhavana" lane="234946738#2_0" startPos="203.14" endPos="218.14" friendlyPos="true" lines="290D"/>
+    <busStop id="7142097524" name="Maharani College, KR Circle" lane="764332431_0" startPos="48.95" endPos="63.95" friendlyPos="true"/>
+    <busStop id="7142097525" name="Maharani College, KR Circle" lane="764332431_0" startPos="48.98" endPos="63.98" friendlyPos="true" lines="290D"/>
+    <busStop id="7142097526" name="Vidhana Soudha" lane="362206700#3_0" startPos="15.38" endPos="30.38" friendlyPos="true"/>
+    <busStop id="7156942402" name="Maniksha Parade Ground" lane="544761380#0_0" startPos="63.32" endPos="78.32" friendlyPos="true"/>
+    <busStop id="7156942403" name="Dickenson Road" lane="72099280#3_0" startPos="37.99" endPos="52.99" friendlyPos="true"/>
+    <busStop id="7156942404" name="Hasanath College" lane="484510041#5_0" startPos="38.97" endPos="53.97" friendlyPos="true"/>
+    <busStop id="7156942405" name="Electric B Station" lane="172947338#1_0" startPos="17.76" endPos="32.76" friendlyPos="true" lines="197"/>
+    <busStop id="7156942406" name="Lido Talkies" lane="464465205#10_0" startPos="92.23" endPos="107.23" friendlyPos="true"/>
+    <busStop id="7156942407" name="Halasur Police Station" lane="464465205#9_0" startPos="1.43" endPos="16.43" friendlyPos="true"/>
+    <busStop id="7156942408" name="Lakshmipura Ulsoor" lane="464465186#7_0" startPos="0.00" endPos="13.34" friendlyPos="true"/>
+    <busStop id="7156942409" name="Double Road Indiranagara" lane="464465186#2_0" startPos="34.02" endPos="49.02" friendlyPos="true"/>
+    <busStop id="7157856780" name="Lalbagh West Gate, V V Puram" lane="23054647#0_0" startPos="0.00" endPos="7.50" friendlyPos="true"/>
+    <busStop id="7157856781" name="Minarva Circle, Rashtriya Vidyalaya Road" lane="23054647#4_0" startPos="32.07" endPos="47.07" friendlyPos="true"/>
+    <busStop id="7157856782" name="Lalbagh Main Gate" lane="36965408#1_0" startPos="20.17" endPos="35.17" friendlyPos="true"/>
+    <busStop id="7157889187" name="Commercial Street" lane="542070644#3_0" startPos="9.52" endPos="24.52" friendlyPos="true"/>
+    <busStop id="7157889188" name="Shanthinagara Bus Stop KH Road" lane="553447543_0" startPos="114.79" endPos="129.79" friendlyPos="true"/>
+    <busStop id="7157889189" name="State Bank India Garage" lane="26283651#2_0" startPos="105.68" endPos="120.68" friendlyPos="true"/>
+    <busStop id="7157889191" name="KH Road, Double Road" lane="375964867#2_0" startPos="16.60" endPos="31.60" friendlyPos="true"/>
+    <busStop id="7157895257" name="Lalbagh Main Gate" lane="23078145#0_0" startPos="550.72" endPos="565.72" friendlyPos="true"/>
+    <busStop id="7157895258" name="Krumbigal Road" lane="99452388#4_0" startPos="12.18" endPos="27.18" friendlyPos="true"/>
+    <busStop id="7157895259" name="Shanthinagara Bus Stop KH Road" lane="638928394_0" startPos="90.08" endPos="105.08" friendlyPos="true"/>
+    <busStop id="7157895260" name="Richmond Circle" lane="171887405#12_0" startPos="90.67" endPos="105.67" friendlyPos="true"/>
+    <busStop id="7157895261" name="Hosmat Hospital" lane="327550407#4_0" startPos="116.53" endPos="131.53" friendlyPos="true"/>
+    <busStop id="7164445937" name="Sirsi Circle" lane="36958313#0_0" startPos="19.24" endPos="34.24" friendlyPos="true"/>
+    <busStop id="7164445940" name="Vinayaka Talkies KR Market" lane="525778225#0_0" startPos="30.77" endPos="45.77" friendlyPos="true"/>
+    <busStop id="7292436123" name="Corporation" lane="781001561_0" startPos="24.46" endPos="39.46" friendlyPos="true"/>
+    <busStop id="7293708127" name="Anepalya" lane="239441160#3_0" startPos="75.85" endPos="90.85" friendlyPos="true"/>
+    <busStop id="7293817087" name="Adugodi" lane="162583705#0_0" startPos="79.25" endPos="94.25" friendlyPos="true"/>
+    <busStop id="7293817154" name="Pothalappa Garden" lane="430154367#1_0" startPos="59.08" endPos="74.08" friendlyPos="true"/>
+    <busStop id="7293817164" name="Anepalya" lane="781192797_0" startPos="24.83" endPos="39.83" friendlyPos="true"/>
+    <busStop id="806588782" name="Bangalore City Junction" lane="53861699#0_0" startPos="217.60" endPos="417.60" friendlyPos="true" lines="Mysuru - Chennai Shatabdi Express">
+        <access lane="53859312#2_0" pos="77.52" length="108.82" friendlyPos="1"/>
+        <access lane="53859312#3_0" pos="0.00" length="109.86" friendlyPos="1"/>
+        <access lane="53861552_0" pos="16.03" length="97.48" friendlyPos="1"/>
+        <access lane="53861553_0" pos="19.54" length="92.93" friendlyPos="1"/>
+        <access lane="53861554#0_0" pos="0.00" length="103.70" friendlyPos="1"/>
+    </busStop>
+    <busStop id="806588784" name="Bangalore City Junction" lane="372090005#3_0" startPos="94.83" endPos="294.83" friendlyPos="true">
+        <access lane="31235660#2_0" pos="0.00" length="132.67" friendlyPos="1"/>
+        <access lane="53861546#1_0" pos="10.02" length="118.54" friendlyPos="1"/>
+        <access lane="53861556_0" pos="21.81" length="117.08" friendlyPos="1"/>
+        <access lane="53861557#0_0" pos="0.00" length="110.22" friendlyPos="1"/>
+        <access lane="53861849#1_0" pos="16.02" length="131.84" friendlyPos="1"/>
+    </busStop>
+    <busStop id="806588786" name="Bangalore City Junction" lane="53861555#1_0" startPos="89.14" endPos="289.14" friendlyPos="true">
+        <access lane="31235686#2_0" pos="13.44" length="100.74" friendlyPos="1"/>
+        <access lane="31235686#3_0" pos="0.20" length="97.45" friendlyPos="1"/>
+        <access lane="31235686#4_0" pos="13.70" length="93.56" friendlyPos="1"/>
+        <access lane="53861556_0" pos="21.81" length="99.89" friendlyPos="1"/>
+        <access lane="53861849#1_0" pos="16.02" length="99.32" friendlyPos="1"/>
+    </busStop>
+    <busStop id="806588787" name="Bangalore City Junction" lane="645670950#0_0" startPos="261.88" endPos="461.88" friendlyPos="true">
+        <access lane="53859312#2_0" pos="77.88" length="116.69" friendlyPos="1"/>
+        <access lane="53859312#3_0" pos="0.00" length="117.59" friendlyPos="1"/>
+        <access lane="53861552_0" pos="16.03" length="98.70" friendlyPos="1"/>
+        <access lane="53861553_0" pos="19.54" length="91.33" friendlyPos="1"/>
+        <access lane="53861554#0_0" pos="0.00" length="106.60" friendlyPos="1"/>
+    </busStop>
+    <busStop id="806588788" name="Bangalore City Junction" lane="325259815#2_0" startPos="212.82" endPos="412.82" friendlyPos="true">
+        <access lane="-53859312#2_0" pos="0.48" length="66.55" friendlyPos="1"/>
+        <access lane="-53859312#3_0" pos="39.79" length="68.19" friendlyPos="1"/>
+        <access lane="457588638#1_0" pos="114.11" length="72.06" friendlyPos="1"/>
+        <access lane="53859312#2_0" pos="77.65" length="61.75" friendlyPos="1"/>
+        <access lane="53859312#3_0" pos="0.00" length="63.51" friendlyPos="1"/>
+    </busStop>
+    <busStop id="806588789" name="Bangalore City Junction" lane="53861698#0_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="Rajdhani Express: Delhi =&gt; Bengaluru">
+        <access lane="-53859312#2_0" pos="1.64" length="84.23" friendlyPos="1"/>
+        <access lane="-53859312#3_0" pos="39.79" length="85.85" friendlyPos="1"/>
+        <access lane="457588638#1_0" pos="114.11" length="89.82" friendlyPos="1"/>
+        <access lane="53859312#2_0" pos="76.49" length="79.43" friendlyPos="1"/>
+        <access lane="53859312#3_0" pos="0.00" length="81.15" friendlyPos="1"/>
+    </busStop>
+    <busStop id="806588796" name="Bangalore City Junction" lane="372083762#0_0" startPos="304.41" endPos="504.41" friendlyPos="true">
+        <access lane="-53859312#2_0" pos="1.16" length="90.85" friendlyPos="1"/>
+        <access lane="-53859312#3_0" pos="39.79" length="92.23" friendlyPos="1"/>
+        <access lane="457588638#1_0" pos="114.11" length="96.37" friendlyPos="1"/>
+        <access lane="53859312#2_0" pos="76.97" length="86.05" friendlyPos="1"/>
+        <access lane="53859312#3_0" pos="0.00" length="87.51" friendlyPos="1"/>
+    </busStop>
+    <busStop id="806588798" name="Bangalore City Junction" lane="645645115#1_0" startPos="183.47" endPos="383.47" friendlyPos="true">
+        <access lane="31235660#2_0" pos="37.22" length="128.88" friendlyPos="1"/>
+        <access lane="31235660#3_0" pos="0.00" length="139.09" friendlyPos="1"/>
+        <access lane="53861552_0" pos="16.03" length="130.71" friendlyPos="1"/>
+        <access lane="53861553_0" pos="19.54" length="107.51" friendlyPos="1"/>
+        <access lane="53861557#0_0" pos="0.00" length="122.46" friendlyPos="1"/>
+    </busStop>
+    <busStop id="850782876" name="Mahatma Gandhi Road" lane="549187831_0" startPos="1045.32" endPos="1144.86" friendlyPos="true" lines="Purple">
+        <access lane="327534070#5_0" pos="6.70" length="32.48" friendlyPos="1"/>
+        <access lane="327534071_0" pos="0.00" length="4.65" friendlyPos="1"/>
+        <access lane="396903045#1_0" pos="533.09" length="9.73" friendlyPos="1"/>
+        <access lane="435249314#1_0" pos="109.75" length="24.84" friendlyPos="1"/>
+        <access lane="4354953#7_0" pos="537.73" length="2.03" friendlyPos="1"/>
+    </busStop>
+    <busStop id="850782880" name="Indiranagar" lane="549187829_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="Purple">
+        <access lane="126774193#12_0" pos="138.90" length="102.35" friendlyPos="1"/>
+        <access lane="464465186#0_0" pos="0.00" length="102.52" friendlyPos="1"/>
+    </busStop>
+    <busStop id="956000803" name="Karnataka Housing Complex" lane="27946167#5_0" startPos="915.74" endPos="10.80" friendlyPos="true"/>
+</additional>
