@@ -1478,7 +1478,6 @@ class Experiment(object):
                 self.topology = parti.partition(self.cluster.num_workers(),
                                                 shares=self.shares)
             self.logger.debug("Tunnels: " + str(self.topology.getTunnels()))
-            #TODO: guardar los tuneles en un archivo. Ver el formato correcto
             self.write_tunnels_to_file(self.topology.getTunnels())
         subtopos = self.topology.getTopos()
         if(len(subtopos) > self.cluster.num_workers()):
