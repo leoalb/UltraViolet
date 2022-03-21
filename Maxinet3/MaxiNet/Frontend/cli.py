@@ -112,24 +112,28 @@ class CLI(Cmd):
         """
         sp = s.split(" ")
         sw = sp[0]
-        cmd = " ".join(sp[1:len(sp)])
         switch = self.experiment.get(sw)
         if(switch is None):
             print ("Error: Switch " + sw + " does not exist")
         else:
-            print (switch.pexec(cmd))
+            out = switch.pexec("ip route")
+            out = out[0].split('\n')
+            for i in out:
+                print (i)
 
     def do_ifconfig(self, s):
         """execute ifconfig at switch
         """
         sp = s.split(" ")
         sw = sp[0]
-        cmd = " ".join(sp[1:len(sp)])
         switch = self.experiment.get(sw)
         if(switch is None):
             print ("Error: Switch " + sw + " does not exist")
         else:
-            print (switch.pexec(cmd))
+            out = switch.pexec("ifconfig")
+            out = out[0].split('\n')
+            for i in out:
+                print (i)
 
     def do_dpctl(self, s):
         "execute dpctl at switch"
