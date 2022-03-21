@@ -1447,6 +1447,17 @@ class Experiment(object):
         """
         return self.get_node(node)
 
+    def write_tunnels_to_file(self, tunnels):
+        filename = "/tmp/tunnels"
+        self.logger.debug("Tunnels file: " + filename)
+        t=[]
+        import json
+        for i in tunnels:
+            t.append(i[2])
+        with open(filename, 'w') as filehandle:
+            json.dump(t, filehandle)
+        self.logger.debug(str(t))
+
     def setup(self):
         """Start experiment.
 
@@ -1467,6 +1478,7 @@ class Experiment(object):
                 self.topology = parti.partition(self.cluster.num_workers(),
                                                 shares=self.shares)
             self.logger.debug("Tunnels: " + str(self.topology.getTunnels()))
+            self.write_tunnels_to_file(self.topology.getTunnels())
         subtopos = self.topology.getTopos()
         if(len(subtopos) > self.cluster.num_workers()):
             raise RuntimeError("Cluster does not have enough workers for " +

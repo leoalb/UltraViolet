@@ -18,6 +18,7 @@ from mininet.topo import Topo
 
 
 logger = logging.getLogger(__name__)
+logging.basicConfig(filename='experiment.log', level=logging.DEBUG)
 
 
 # the following block is to support deprecation warnings. this is really not
