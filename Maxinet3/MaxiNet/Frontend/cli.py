@@ -101,6 +101,40 @@ class CLI(Cmd):
         print ("*** Results: %.2f%% dropped (%d/%d received)" % \
                     ((1.0 - received / sent) * 100.0, int(received), int(sent)))
 
+    def do_routes(self, s):
+        """execute ip route in all switches
+        """
+        for sw in self.experiment.switches:
+            print(sw.pexec("ip route"))
+
+    def do_route(self, s):
+        """execute ip route at switch
+        """
+        sp = s.split(" ")
+        sw = sp[0]
+        switch = self.experiment.get(sw)
+        if(switch is None):
+            print ("Error: Switch " + sw + " does not exist")
+        else:
+            out = switch.pexec("ip route")
+            out = out[0].split('\n')
+            for i in out:
+                print (i)
+
+    def do_ifconfig(self, s):
+        """execute ifconfig at switch
+        """
+        sp = s.split(" ")
+        sw = sp[0]
+        switch = self.experiment.get(sw)
+        if(switch is None):
+            print ("Error: Switch " + sw + " does not exist")
+        else:
+            out = switch.pexec("ifconfig")
+            out = out[0].split('\n')
+            for i in out:
+                print (i)
+
     def do_dpctl(self, s):
         "execute dpctl at switch"
         sp = s.split(" ")
